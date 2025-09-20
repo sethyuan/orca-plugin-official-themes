@@ -1,0 +1,535 @@
+/**
+ * Catppuccin Theme for Orca Note
+ * Light mode: Catppuccin Latte
+ * Dark mode: Catppuccin Macchiato
+ *
+ * Based on: https://github.com/catppuccin/catppuccin
+ */
+
+/* Catppuccin Latte Colors */
+:root {
+  /* Base colors */
+  --catppuccin-latte-rosewater: #dc8a78;
+  --catppuccin-latte-flamingo: #dd7878;
+  --catppuccin-latte-pink: #ea76cb;
+  --catppuccin-latte-mauve: #8839ef;
+  --catppuccin-latte-red: #d20f39;
+  --catppuccin-latte-maroon: #e64553;
+  --catppuccin-latte-peach: #fe640b;
+  --catppuccin-latte-yellow: #df8e1d;
+  --catppuccin-latte-green: #40a02b;
+  --catppuccin-latte-teal: #179299;
+  --catppuccin-latte-sky: #04a5e5;
+  --catppuccin-latte-sapphire: #209fb5;
+  --catppuccin-latte-blue: #1e66f5;
+  --catppuccin-latte-lavender: #7287fd;
+  --catppuccin-latte-text: #4c4f69;
+  --catppuccin-latte-subtext1: #5c5f77;
+  --catppuccin-latte-subtext0: #6c6f85;
+  --catppuccin-latte-overlay2: #7c7f93;
+  --catppuccin-latte-overlay1: #8c8fa1;
+  --catppuccin-latte-overlay0: #9ca0b0;
+  --catppuccin-latte-surface2: #acb0be;
+  --catppuccin-latte-surface1: #bcc0cc;
+  --catppuccin-latte-surface0: #ccd0da;
+  --catppuccin-latte-base: #eff1f5;
+  --catppuccin-latte-mantle: #e6e9ef;
+  --catppuccin-latte-crust: #dce0e8;
+
+  /* Override Orca variables for light mode */
+  --orca-color-primary-5: var(--catppuccin-latte-mauve) !important;
+  --orca-color-primary-1: color-mix(in oklab, var(--catppuccin-latte-mauve) 15%, var(--catppuccin-latte-base));
+  --orca-color-primary-2: color-mix(in oklab, var(--catppuccin-latte-mauve) 40%, var(--catppuccin-latte-base));
+  --orca-color-primary-3: color-mix(in oklab, var(--catppuccin-latte-mauve) 65%, var(--catppuccin-latte-base));
+  --orca-color-primary-4: color-mix(in oklab, var(--catppuccin-latte-mauve) 85%, var(--catppuccin-latte-base));
+  --orca-color-primary-6: color-mix(in oklab, var(--catppuccin-latte-mauve) 85%, var(--catppuccin-latte-text));
+  --orca-color-primary-7: color-mix(in oklab, var(--catppuccin-latte-mauve) 65%, var(--catppuccin-latte-text));
+  --orca-color-primary-8: color-mix(in oklab, var(--catppuccin-latte-mauve) 45%, var(--catppuccin-latte-text));
+  --orca-color-primary-9: color-mix(in oklab, var(--catppuccin-latte-mauve) 30%, var(--catppuccin-latte-text));
+
+  --orca-color-white: var(--catppuccin-latte-base);
+  --orca-color-black: var(--catppuccin-latte-text);
+  --orca-color-gray-0: var(--catppuccin-latte-mantle);
+  --orca-color-gray-1: var(--catppuccin-latte-crust);
+  --orca-color-gray-2: var(--catppuccin-latte-surface0);
+  --orca-color-gray-3: var(--catppuccin-latte-surface1);
+  --orca-color-gray-4: var(--catppuccin-latte-surface2);
+  --orca-color-gray-5: var(--catppuccin-latte-overlay0);
+  --orca-color-gray-6: var(--catppuccin-latte-overlay1);
+  --orca-color-gray-7: var(--catppuccin-latte-overlay2);
+  --orca-color-gray-8: var(--catppuccin-latte-subtext0);
+  --orca-color-gray-9: var(--catppuccin-latte-subtext1);
+
+  --orca-color-success-5: var(--catppuccin-latte-green);
+  --orca-color-success-1: color-mix(in oklab, var(--catppuccin-latte-green) 40%, var(--catppuccin-latte-base));
+  --orca-color-success-2: color-mix(in oklab, var(--catppuccin-latte-green) 55%, var(--catppuccin-latte-base));
+  --orca-color-success-3: color-mix(in oklab, var(--catppuccin-latte-green) 70%, var(--catppuccin-latte-base));
+  --orca-color-success-4: color-mix(in oklab, var(--catppuccin-latte-green) 85%, var(--catppuccin-latte-base));
+  --orca-color-success-6: color-mix(in oklab, var(--catppuccin-latte-green) 85%, var(--catppuccin-latte-text));
+  --orca-color-success-7: color-mix(in oklab, var(--catppuccin-latte-green) 70%, var(--catppuccin-latte-text));
+  --orca-color-success-8: color-mix(in oklab, var(--catppuccin-latte-green) 55%, var(--catppuccin-latte-text));
+  --orca-color-success-9: color-mix(in oklab, var(--catppuccin-latte-green) 40%, var(--catppuccin-latte-text));
+
+  --orca-color-warning-5: var(--catppuccin-latte-yellow);
+  --orca-color-warning-1: color-mix(in oklab, var(--catppuccin-latte-yellow) 40%, var(--catppuccin-latte-base));
+  --orca-color-warning-2: color-mix(in oklab, var(--catppuccin-latte-yellow) 55%, var(--catppuccin-latte-base));
+  --orca-color-warning-3: color-mix(in oklab, var(--catppuccin-latte-yellow) 70%, var(--catppuccin-latte-base));
+  --orca-color-warning-4: color-mix(in oklab, var(--catppuccin-latte-yellow) 85%, var(--catppuccin-latte-base));
+  --orca-color-warning-6: color-mix(in oklab, var(--catppuccin-latte-yellow) 85%, var(--catppuccin-latte-text));
+  --orca-color-warning-7: color-mix(in oklab, var(--catppuccin-latte-yellow) 70%, var(--catppuccin-latte-text));
+  --orca-color-warning-8: color-mix(in oklab, var(--catppuccin-latte-yellow) 55%, var(--catppuccin-latte-text));
+  --orca-color-warning-9: color-mix(in oklab, var(--catppuccin-latte-yellow) 40%, var(--catppuccin-latte-text));
+
+  --orca-color-dangerous-5: var(--catppuccin-latte-red);
+  --orca-color-dangerous-1: color-mix(in oklab, var(--catppuccin-latte-red) 40%, var(--catppuccin-latte-base));
+  --orca-color-dangerous-2: color-mix(in oklab, var(--catppuccin-latte-red) 55%, var(--catppuccin-latte-base));
+  --orca-color-dangerous-3: color-mix(in oklab, var(--catppuccin-latte-red) 70%, var(--catppuccin-latte-base));
+  --orca-color-dangerous-4: color-mix(in oklab, var(--catppuccin-latte-red) 85%, var(--catppuccin-latte-base));
+  --orca-color-dangerous-6: color-mix(in oklab, var(--catppuccin-latte-red) 85%, var(--catppuccin-latte-text));
+  --orca-color-dangerous-7: color-mix(in oklab, var(--catppuccin-latte-red) 70%, var(--catppuccin-latte-text));
+  --orca-color-dangerous-8: color-mix(in oklab, var(--catppuccin-latte-red) 55%, var(--catppuccin-latte-text));
+  --orca-color-dangerous-9: color-mix(in oklab, var(--catppuccin-latte-red) 40%, var(--catppuccin-latte-text));
+
+  --orca-color-bg-1: var(--catppuccin-latte-base);
+  --orca-color-bg-2: var(--catppuccin-latte-mantle);
+  --orca-color-bg-3: var(--catppuccin-latte-crust);
+  --orca-color-bg-blue: color-mix(in oklab, var(--catppuccin-latte-blue) 20%, var(--catppuccin-latte-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--catppuccin-latte-green) 20%, var(--catppuccin-latte-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--catppuccin-latte-red) 20%, var(--catppuccin-latte-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-latte-yellow) 20%, var(--catppuccin-latte-base));
+
+  --orca-color-text-1: var(--catppuccin-latte-text);
+  --orca-color-text-2: var(--catppuccin-latte-subtext1);
+  --orca-color-text-blue: var(--catppuccin-latte-blue);
+  --orca-color-text-green: var(--catppuccin-latte-green);
+  --orca-color-text-red: var(--catppuccin-latte-red);
+  --orca-color-text-yellow: var(--catppuccin-latte-yellow);
+
+  --orca-color-border: var(--catppuccin-latte-surface0);
+  --orca-color-separator: var(--catppuccin-latte-surface0);
+  --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-latte-mauve) 25%, var(--catppuccin-latte-base));
+  --orca-color-placeholder: var(--catppuccin-latte-overlay0);
+  --orca-color-selection: var(--orca-color-primary-1);
+  --orca-color-result-highlight: var(--orca-color-bg-yellow);
+  --orca-color-tag: var(--catppuccin-latte-surface0);
+  --orca-color-tab: var(--orca-color-primary-4);
+  --orca-color-win-scrollbar: var(--catppuccin-latte-overlay0);
+  --orca-color-scope-line: var(--catppuccin-latte-surface1);
+  --orca-color-mirror: var(--catppuccin-latte-surface0);
+}
+
+/* Catppuccin Macchiato Colors for Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Base colors */
+    --catppuccin-macchiato-rosewater: #f4dbd6;
+    --catppuccin-macchiato-flamingo: #f0c6c6;
+    --catppuccin-macchiato-pink: #f5bde6;
+    --catppuccin-macchiato-mauve: #c6a0f6;
+    --catppuccin-macchiato-red: #ed8796;
+    --catppuccin-macchiato-maroon: #ee99a0;
+    --catppuccin-macchiato-peach: #f5a97f;
+    --catppuccin-macchiato-yellow: #eed49f;
+    --catppuccin-macchiato-green: #a6da95;
+    --catppuccin-macchiato-teal: #8bd5ca;
+    --catppuccin-macchiato-sky: #91d7e3;
+    --catppuccin-macchiato-sapphire: #7dc4e4;
+    --catppuccin-macchiato-blue: #8aadf4;
+    --catppuccin-macchiato-lavender: #b7bdf8;
+    --catppuccin-macchiato-text: #cad3f5;
+    --catppuccin-macchiato-subtext1: #b8c0e0;
+    --catppuccin-macchiato-subtext0: #a5adcb;
+    --catppuccin-macchiato-overlay2: #939ab7;
+    --catppuccin-macchiato-overlay1: #8087a2;
+    --catppuccin-macchiato-overlay0: #6e738d;
+    --catppuccin-macchiato-surface2: #5b6078;
+    --catppuccin-macchiato-surface1: #494d64;
+    --catppuccin-macchiato-surface0: #363a4f;
+    --catppuccin-macchiato-base: #24273a;
+    --catppuccin-macchiato-mantle: #1e2030;
+    --catppuccin-macchiato-crust: #181926;
+
+    /* Override Orca variables for dark mode */
+    --orca-color-primary-5: var(--catppuccin-macchiato-mauve) !important;
+    --orca-color-primary-1: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 15%, var(--catppuccin-macchiato-base));
+    --orca-color-primary-2: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 40%, var(--catppuccin-macchiato-base));
+    --orca-color-primary-3: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 65%, var(--catppuccin-macchiato-base));
+    --orca-color-primary-4: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 85%, var(--catppuccin-macchiato-base));
+    --orca-color-primary-6: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 85%, var(--catppuccin-macchiato-text));
+    --orca-color-primary-7: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 65%, var(--catppuccin-macchiato-text));
+    --orca-color-primary-8: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 45%, var(--catppuccin-macchiato-text));
+    --orca-color-primary-9: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 30%, var(--catppuccin-macchiato-text));
+
+    --orca-color-white: var(--catppuccin-macchiato-text);
+    --orca-color-black: var(--catppuccin-macchiato-base);
+    --orca-color-gray-0: var(--catppuccin-macchiato-mantle);
+    --orca-color-gray-1: var(--catppuccin-macchiato-crust);
+    --orca-color-gray-2: var(--catppuccin-macchiato-surface0);
+    --orca-color-gray-3: var(--catppuccin-macchiato-surface1);
+    --orca-color-gray-4: var(--catppuccin-macchiato-surface2);
+    --orca-color-gray-5: var(--catppuccin-macchiato-overlay0);
+    --orca-color-gray-6: var(--catppuccin-macchiato-overlay1);
+    --orca-color-gray-7: var(--catppuccin-macchiato-overlay2);
+    --orca-color-gray-8: var(--catppuccin-macchiato-subtext0);
+    --orca-color-gray-9: var(--catppuccin-macchiato-subtext1);
+
+    --orca-color-success-5: var(--catppuccin-macchiato-green);
+    --orca-color-success-1: color-mix(in oklab, var(--catppuccin-macchiato-green) 40%, var(--catppuccin-macchiato-base));
+    --orca-color-success-2: color-mix(in oklab, var(--catppuccin-macchiato-green) 55%, var(--catppuccin-macchiato-base));
+    --orca-color-success-3: color-mix(in oklab, var(--catppuccin-macchiato-green) 70%, var(--catppuccin-macchiato-base));
+    --orca-color-success-4: color-mix(in oklab, var(--catppuccin-macchiato-green) 85%, var(--catppuccin-macchiato-base));
+    --orca-color-success-6: color-mix(in oklab, var(--catppuccin-macchiato-green) 85%, var(--catppuccin-macchiato-text));
+    --orca-color-success-7: color-mix(in oklab, var(--catppuccin-macchiato-green) 70%, var(--catppuccin-macchiato-text));
+    --orca-color-success-8: color-mix(in oklab, var(--catppuccin-macchiato-green) 55%, var(--catppuccin-macchiato-text));
+    --orca-color-success-9: color-mix(in oklab, var(--catppuccin-macchiato-green) 40%, var(--catppuccin-macchiato-text));
+
+    --orca-color-warning-5: var(--catppuccin-macchiato-yellow);
+    --orca-color-warning-1: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 40%, var(--catppuccin-macchiato-base));
+    --orca-color-warning-2: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 55%, var(--catppuccin-macchiato-base));
+    --orca-color-warning-3: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 70%, var(--catppuccin-macchiato-base));
+    --orca-color-warning-4: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 85%, var(--catppuccin-macchiato-base));
+    --orca-color-warning-6: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 85%, var(--catppuccin-macchiato-text));
+    --orca-color-warning-7: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 70%, var(--catppuccin-macchiato-text));
+    --orca-color-warning-8: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 55%, var(--catppuccin-macchiato-text));
+    --orca-color-warning-9: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 40%, var(--catppuccin-macchiato-text));
+
+    --orca-color-dangerous-5: var(--catppuccin-macchiato-red);
+    --orca-color-dangerous-1: color-mix(in oklab, var(--catppuccin-macchiato-red) 40%, var(--catppuccin-macchiato-base));
+    --orca-color-dangerous-2: color-mix(in oklab, var(--catppuccin-macchiato-red) 55%, var(--catppuccin-macchiato-base));
+    --orca-color-dangerous-3: color-mix(in oklab, var(--catppuccin-macchiato-red) 70%, var(--catppuccin-macchiato-base));
+    --orca-color-dangerous-4: color-mix(in oklab, var(--catppuccin-macchiato-red) 85%, var(--catppuccin-macchiato-base));
+    --orca-color-dangerous-6: color-mix(in oklab, var(--catppuccin-macchiato-red) 85%, var(--catppuccin-macchiato-text));
+    --orca-color-dangerous-7: color-mix(in oklab, var(--catppuccin-macchiato-red) 70%, var(--catppuccin-macchiato-text));
+    --orca-color-dangerous-8: color-mix(in oklab, var(--catppuccin-macchiato-red) 55%, var(--catppuccin-macchiato-text));
+    --orca-color-dangerous-9: color-mix(in oklab, var(--catppuccin-macchiato-red) 40%, var(--catppuccin-macchiato-text));
+
+    --orca-color-bg-1: var(--catppuccin-macchiato-base);
+    --orca-color-bg-2: var(--catppuccin-macchiato-mantle);
+    --orca-color-bg-3: var(--catppuccin-macchiato-crust);
+    --orca-color-bg-blue: color-mix(in oklab, var(--catppuccin-macchiato-blue) 25%, var(--catppuccin-macchiato-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--catppuccin-macchiato-green) 25%, var(--catppuccin-macchiato-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--catppuccin-macchiato-red) 25%, var(--catppuccin-macchiato-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 25%, var(--catppuccin-macchiato-base));
+
+    --orca-color-text-1: var(--catppuccin-macchiato-text);
+    --orca-color-text-2: var(--catppuccin-macchiato-subtext1);
+    --orca-color-text-blue: var(--catppuccin-macchiato-blue);
+    --orca-color-text-green: var(--catppuccin-macchiato-green);
+    --orca-color-text-red: var(--catppuccin-macchiato-red);
+    --orca-color-text-yellow: var(--catppuccin-macchiato-yellow);
+
+    --orca-color-border: var(--catppuccin-macchiato-surface0);
+    --orca-color-separator: var(--catppuccin-macchiato-surface0);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 30%, var(--catppuccin-macchiato-base));
+    --orca-color-placeholder: var(--catppuccin-macchiato-overlay0);
+    --orca-color-selection: oklch(from var(--orca-color-primary-5) l c h / 50%);
+    --orca-color-result-highlight: var(--orca-color-bg-yellow);
+    --orca-color-tag: var(--catppuccin-macchiato-surface0);
+    --orca-color-tab: var(--orca-color-primary-6);
+    --orca-color-win-scrollbar: var(--catppuccin-macchiato-overlay0);
+    --orca-color-scope-line: var(--catppuccin-macchiato-surface1);
+    --orca-color-mirror: var(--catppuccin-macchiato-surface0);
+
+    /* Shadows for dark mode */
+    --orca-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, .3), 0 2px 4px -2px rgba(0, 0, 0, .3);
+    --orca-shadow-menu: rgb(from var(--catppuccin-macchiato-crust) r g b / 0.15) 0px 0px 0px 1px, rgb(from var(--catppuccin-macchiato-crust) r g b / 0.2) 0px 3px 6px, rgb(from var(--catppuccin-macchiato-crust) r g b / 0.3) 0px 9px 24px;
+    --orca-shadow-toolbar-list: rgb(from var(--catppuccin-macchiato-crust) r g b / 0.15) 0px 2px 0px 1px, rgb(from var(--catppuccin-macchiato-crust) r g b / 0.2) 0px 3px 6px, rgb(from var(--catppuccin-macchiato-crust) r g b / 0.3) 0px 22px 24px;
+    --orca-shadow-findreplace: rgb(from var(--catppuccin-macchiato-crust) r g b / 0.1) 0px 0px 0px 1px, rgb(from var(--catppuccin-macchiato-crust) r g b / 0.15) 0px 3px 6px, rgb(from var(--catppuccin-macchiato-crust) r g b / 0.2) 0px 9px 24px;
+    --orca-shadow-popup: rgb(from var(--catppuccin-macchiato-crust) r g b / 0.2) 0px 0px 0px 1px, rgb(from var(--catppuccin-macchiato-crust) r g b / 0.15) 0px 2px 4px, rgb(from var(--catppuccin-macchiato-crust) r g b / 0.25) 0px 5px 20px;
+  }
+}
+
+/* Headbar Specific Overrides for Both Light and Dark Modes */
+.orca-headbar-sidebar-tools .orca-button {
+  color: revert;
+}
+
+/* Sidebar Specific Overrides for Both Light and Dark Modes */
+#sidebar {
+  /* Light mode sidebar - Catppuccin Latte inspired */
+  --orca-color-dangerous-5: var(--catppuccin-latte-red);
+  --orca-color-text-1: var(--catppuccin-latte-text);
+  --orca-color-bg-1: var(--catppuccin-latte-crust);
+  --orca-color-bg-2: var(--catppuccin-latte-mantle);
+  --orca-color-border: var(--catppuccin-latte-surface1);
+  --orca-color-text-2: var(--catppuccin-latte-subtext1);
+  --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-latte-mauve) 20%, var(--catppuccin-latte-crust));
+  --orca-border-general: 1px solid var(--orca-color-border);
+  --orca-shadow-menu: rgb(from var(--catppuccin-latte-overlay0) r g b / 0.08) 0px 0px 0px 1px, rgb(from var(--catppuccin-latte-overlay0) r g b / 0.12) 0px 2px 4px, rgb(from var(--catppuccin-latte-overlay0) r g b / 0.16) 0px 8px 16px;
+  --orca-color-win-scrollbar: var(--catppuccin-latte-surface1);
+  --orca-color-selection: color-mix(in oklab, var(--catppuccin-latte-mauve) 20%, var(--catppuccin-latte-crust));
+  --orca-color-placeholder: var(--catppuccin-latte-overlay1);
+}
+
+/* Light mode sidebar tab options styling - Catppuccin Latte inspired */
+.orca-sidebar-tab-options {
+  background-color: var(--catppuccin-latte-mantle);
+  border: 1px solid var(--catppuccin-latte-surface0);
+}
+
+.orca-sidebar-tab-options .orca-segmented-item {
+  color: var(--catppuccin-latte-overlay2);
+}
+
+.orca-sidebar-tab-options .orca-segmented-item.orca-selected {
+  color: var(--catppuccin-latte-text);
+}
+
+.orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected {
+  background-color: var(--catppuccin-latte-base);
+  box-shadow: var(--orca-shadow-segmented);
+}
+
+.orca-sidebar-tab-options.orca-segmented .orca-transition {
+  background-color: var(--catppuccin-latte-base);
+  box-shadow: var(--orca-shadow-segmented);
+}
+
+.orca-sidebar-create-aliased-btn.orca-button {
+  background-color: var(--catppuccin-latte-surface0);
+  color: var(--catppuccin-latte-subtext1);
+}
+
+.orca-sidebar-create-aliased-btn.orca-button:hover {
+  background-color: var(--catppuccin-latte-surface1);
+  color: var(--catppuccin-latte-text);
+}
+
+/* Lists icon background color override for light mode */
+#sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-aliased-block-icon) {
+  background-color: var(--catppuccin-latte-surface0);
+  color: var(--catppuccin-latte-overlay2);
+}
+
+#sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
+  background-color: var(--catppuccin-latte-surface1);
+}
+
+#sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-aliased-block-icon) {
+  background-color: var(--catppuccin-latte-surface0);
+  color: var(--catppuccin-latte-overlay1);
+}
+
+/* Menu/popup background override for Sidebar in light mode */
+#sidebar .orca-menu {
+  background-color: var(--catppuccin-latte-mantle);
+  border: 1px solid var(--catppuccin-latte-surface0);
+  box-shadow: rgb(from var(--catppuccin-latte-overlay0) r g b / 0.1) 0px 0px 0px 1px, rgb(from var(--catppuccin-latte-overlay0) r g b / 0.15) 0px 2px 4px, rgb(from var(--catppuccin-latte-overlay0) r g b / 0.2) 0px 8px 16px;
+}
+
+/* Primary button text color override for Sidebar in light mode */
+#sidebar .orca-button.solid {
+  color: var(--catppuccin-latte-base);
+}
+
+/* Calendar component styling for light mode */
+.orca-calendar .day:not(.value):hover,
+.orca-calendar .month:not(.value):hover,
+.orca-calendar .year:not(.value):hover {
+  background-color: var(--catppuccin-latte-surface2);
+  color: var(--catppuccin-latte-text);
+}
+
+.orca-calendar .value {
+  background-color: var(--catppuccin-latte-mauve);
+  color: var(--catppuccin-latte-base);
+}
+
+@media (prefers-color-scheme: dark) {
+  #sidebar {
+    /* Dark mode sidebar - Catppuccin Macchiato inspired */
+    --orca-color-dangerous-5: var(--catppuccin-macchiato-red);
+    --orca-color-text-1: var(--catppuccin-macchiato-text);
+    --orca-color-bg-1: var(--catppuccin-macchiato-mantle);
+    --orca-color-bg-2: var(--catppuccin-macchiato-base);
+    --orca-color-border: var(--catppuccin-macchiato-surface1);
+    --orca-color-text-2: var(--catppuccin-macchiato-subtext1);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 25%, var(--catppuccin-macchiato-crust));
+    --orca-border-general: 1px solid var(--orca-color-border);
+    --orca-shadow-menu: rgb(from var(--catppuccin-macchiato-base) r g b / 0.2) 0px 0px 0px 1px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.25) 0px 2px 4px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.35) 0px 8px 16px;
+    --orca-color-win-scrollbar: var(--catppuccin-macchiato-surface1);
+    --orca-color-selection: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 25%, var(--catppuccin-macchiato-crust));
+    --orca-color-placeholder: var(--catppuccin-macchiato-overlay1);
+  }
+
+  /* Sidebar tab options styling for dark mode */
+  .orca-sidebar-tab-options {
+    background-color: var(--catppuccin-macchiato-surface0);
+    border: 1px solid var(--catppuccin-macchiato-surface0);
+  }
+
+  .orca-sidebar-tab-options .orca-segmented-item {
+    color: var(--catppuccin-macchiato-overlay2);
+  }
+
+  .orca-sidebar-tab-options .orca-segmented-item.orca-selected {
+    color: var(--catppuccin-macchiato-text);
+  }
+
+  .orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected {
+    background-color: var(--catppuccin-macchiato-base);
+    box-shadow: var(--orca-shadow-segmented);
+  }
+
+  .orca-sidebar-tab-options.orca-segmented .orca-transition {
+    background-color: var(--catppuccin-macchiato-base);
+    box-shadow: var(--orca-shadow-segmented);
+  }
+
+  .orca-sidebar-create-aliased-btn.orca-button {
+    background-color: var(--catppuccin-macchiato-surface0);
+    color: var(--catppuccin-macchiato-subtext1);
+  }
+
+  .orca-sidebar-create-aliased-btn.orca-button:hover {
+    background-color: var(--catppuccin-macchiato-surface1);
+    color: var(--catppuccin-macchiato-text);
+  }
+
+  /* Lists icon background color override for dark mode */
+  #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-aliased-block-icon) {
+    background-color: var(--catppuccin-macchiato-surface0);
+    color: var(--catppuccin-macchiato-overlay2);
+  }
+
+  #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
+    background-color: var(--catppuccin-macchiato-surface1);
+  }
+
+  #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-aliased-block-icon) {
+    background-color: var(--catppuccin-macchiato-surface0);
+    color: var(--catppuccin-macchiato-overlay1);
+  }
+
+  /* Menu/popup background override for Sidebar in dark mode */
+  #sidebar .orca-menu {
+    background-color: var(--catppuccin-macchiato-mantle);
+    border: 1px solid var(--catppuccin-macchiato-surface0);
+    box-shadow: rgb(from var(--catppuccin-macchiato-base) r g b / 0.25) 0px 0px 0px 1px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.3) 0px 4px 8px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.4) 0px 12px 24px;
+  }
+
+  /* Primary button text color override for Sidebar in dark mode */
+  #sidebar .orca-button.solid {
+    color: var(--catppuccin-macchiato-base);
+  }
+
+  /* Calendar component styling for dark mode */
+  .orca-calendar .day:not(.value):hover,
+  .orca-calendar .month:not(.value):hover,
+  .orca-calendar .year:not(.value):hover {
+    background-color: var(--catppuccin-macchiato-surface2);
+    color: var(--catppuccin-macchiato-text);
+  }
+
+  .orca-calendar .value {
+    background-color: var(--catppuccin-macchiato-mauve);
+    color: var(--catppuccin-macchiato-base);
+  }
+}
+
+/* Settings Modal Overrides for Both Light and Dark Modes */
+@scope (.orca-settings > .sections) {
+  :scope {
+    background-color: var(--catppuccin-latte-surface0);
+  }
+
+  .item.selected,
+  .item:hover {
+    background-color: var(--catppuccin-latte-surface1);
+  }
+
+  .plugin-item.selected,
+  .plugin-item:hover {
+    background-color: var(--catppuccin-latte-surface1);
+  }
+}
+
+@scope (.orca-settings > .views .shortcut-input) {
+  .recording {
+    background-color: var(--orca-color-primary-1);
+  }
+}
+
+.orca-settings-shortcuts-header {
+  background-color: var(--catppuccin-latte-surface1);
+}
+
+@media (prefers-color-scheme: dark) {
+  @scope (.orca-settings > .sections) {
+    :scope {
+      background-color: var(--catppuccin-macchiato-surface0);
+    }
+
+    .item.selected,
+    .item:hover {
+      background-color: var(--catppuccin-macchiato-surface1);
+    }
+
+    .plugin-item.selected,
+    .plugin-item:hover {
+      background-color: var(--catppuccin-macchiato-surface1);
+    }
+  }
+
+  @scope (.orca-settings > .views) {
+
+    .header-row,
+    .header-row.row:hover {
+      background-color: var(--catppuccin-macchiato-surface0);
+    }
+  }
+
+  @scope (.orca-settings > .views .shortcut-input) {
+    .recording {
+      background-color: var(--orca-color-primary-7);
+    }
+  }
+
+  .orca-settings-shortcuts-header {
+    background-color: var(--catppuccin-macchiato-surface1);
+  }
+}
+
+/* Button Contrast Improvements */
+/* Dangerous button improvements for better contrast */
+.orca-button.dangerous {
+  background-color: var(--catppuccin-latte-red);
+  color: var(--catppuccin-latte-base);
+}
+
+.orca-button.dangerous:active {
+  background-color: var(--catppuccin-latte-maroon);
+}
+
+/* Soft button improvements for better contrast */
+.orca-button.soft {
+  background-color: var(--catppuccin-latte-surface1);
+  color: var(--catppuccin-latte-text);
+}
+
+.orca-button.soft:active {
+  background-color: var(--catppuccin-latte-surface2);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  /* Dangerous button improvements for dark mode */
+  .orca-button.dangerous {
+    background-color: var(--catppuccin-macchiato-red);
+    color: var(--catppuccin-macchiato-base);
+  }
+
+  .orca-button.dangerous:active {
+    background-color: var(--catppuccin-macchiato-maroon);
+  }
+
+  /* Soft button improvements for dark mode */
+  .orca-button.soft {
+    background-color: var(--catppuccin-macchiato-surface1);
+    color: var(--catppuccin-macchiato-text);
+  }
+
+  .orca-button.soft:active {
+    background-color: var(--catppuccin-macchiato-surface2);
+  }
+}
