@@ -4,6 +4,14 @@ A Orca Note theme plugin replicating the popular Catppuccin theme.
 
 It uses Catppuccin Latte for light mode and Catppuccin Macchiato for dark mode.
 
+### Light
+
+<img width="1093" height="821" alt="image" src="https://github.com/user-attachments/assets/e40dd697-192a-4e12-ac14-6e15e5f0a6a8" />
+
+### Dark
+
+<img width="1093" height="821" alt="image" src="https://github.com/user-attachments/assets/bead6347-13c9-4062-9cce-2330a6f958df" />
+
 ## Usage
 
 1. Download the zip file from the [releases page](https://github.com/sethyuan/orca-plugin-catppuccin-theme/releases) and extract it into Orca Note's `plugins` directory.
