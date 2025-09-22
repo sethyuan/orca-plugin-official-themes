@@ -533,3 +533,17 @@
     background-color: var(--catppuccin-macchiato-surface2);
   }
 }
+
+/* Segmented */
+@media (prefers-color-scheme: dark) {
+  .orca-segmented {
+    background-color: var(--orca-color-gray-3);
+  }
+}
+
+/* Select */
+@media (prefers-color-scheme: dark) {
+  .orca-select-button-selection {
+    background-color: var(--orca-color-primary-3);
+  }
+}
