@@ -47,8 +47,6 @@
   --orca-color-primary-8: color-mix(in oklab, var(--catppuccin-latte-mauve) 45%, var(--catppuccin-latte-text));
   --orca-color-primary-9: color-mix(in oklab, var(--catppuccin-latte-mauve) 30%, var(--catppuccin-latte-text));
 
-  --orca-color-white: var(--catppuccin-latte-base);
-  --orca-color-black: var(--catppuccin-latte-text);
   --orca-color-gray-0: var(--catppuccin-latte-mantle);
   --orca-color-gray-1: var(--catppuccin-latte-crust);
   --orca-color-gray-2: var(--catppuccin-latte-surface0);
@@ -160,8 +158,6 @@
     --orca-color-primary-8: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 45%, var(--catppuccin-macchiato-text));
     --orca-color-primary-9: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 30%, var(--catppuccin-macchiato-text));
 
-    --orca-color-white: var(--catppuccin-macchiato-text);
-    --orca-color-black: var(--catppuccin-macchiato-base);
     --orca-color-gray-0: var(--catppuccin-macchiato-mantle);
     --orca-color-gray-1: var(--catppuccin-macchiato-crust);
     --orca-color-gray-2: var(--catppuccin-macchiato-surface0);
