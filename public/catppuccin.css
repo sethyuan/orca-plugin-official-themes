@@ -232,8 +232,8 @@
 
     --orca-shadow-menu: rgb(from var(--orca-color-gray-6) r g b / 0.05) 0px 0px 0px 1px, rgb(from var(--orca-color-gray-6) r g b / 0.1) 0px 3px 6px, rgb(from var(--orca-color-gray-6) r g b / 0.2) 0px 9px 24px;
     --orca-shadow-toolbar-list: rgb(from var(--orca-color-gray-6) r g b / 0.05) 0px 2px 0px 1px, rgb(from var(--orca-color-gray-6) r g b / 0.1) 0px 3px 6px, rgb(from var(--orca-color-gray-6) r g b / 0.2) 0px 22px 24px;
-    --orca-shadow-findreplace: rgb(from var(--orca-color-gray-8) r g b / 0.04) 0px 0px 0px 1px, rgb(from var(--orca-color-gray-8) r g b / 0.03) 0px 3px 6px, rgb(from var(--orca-color-gray-8) r g b / 0.06) 0px 9px 24px;
-    --orca-shadow-popup: rgb(from var(--orca-color-gray-6) r g b / 0.08) 0px 0px 0px 1px, rgb(from var(--orca-color-gray-6) r g b / 0.03) 0px 2px 4px, rgb(from var(--orca-color-gray-6) r g b / 0.06) 0px 5px 20px;
+    --orca-shadow-findreplace: rgb(from var(--orca-color-gray-9) r g b / 0.04) 0px 0px 0px 1px, rgb(from var(--orca-color-gray-9) r g b / 0.03) 0px 3px 6px, rgb(from var(--orca-color-gray-9) r g b / 0.06) 0px 9px 24px;
+    --orca-shadow-popup: rgb(from var(--orca-color-gray-9) r g b / 0.08) 0px 0px 0px 1px, rgb(from var(--orca-color-gray-9) r g b / 0.03) 0px 2px 4px, rgb(from var(--orca-color-gray-9) r g b / 0.06) 0px 5px 20px;
   }
 }
 
@@ -543,5 +543,12 @@
 @media (prefers-color-scheme: dark) {
   .orca-select-button-selection {
     background-color: var(--orca-color-primary-3);
+  }
+}
+
+/* Query calendar view */
+@media (prefers-color-scheme: dark) {
+  .orca-query-calendar-month-view-active {
+    background: var(--orca-color-primary-1);
   }
 }
