@@ -113,7 +113,7 @@
   --orca-color-tab: var(--orca-color-primary-4);
   --orca-color-win-scrollbar: var(--catppuccin-latte-overlay0);
   --orca-color-scope-line: var(--catppuccin-latte-surface1);
-  --orca-color-mirror: var(--catppuccin-latte-surface0);
+  --orca-color-mirror: var(--catppuccin-latte-mantle);
 }
 
 /* Catppuccin Macchiato Colors for Dark Mode */
@@ -224,7 +224,7 @@
     --orca-color-tab: var(--orca-color-primary-6);
     --orca-color-win-scrollbar: var(--catppuccin-macchiato-overlay0);
     --orca-color-scope-line: var(--catppuccin-macchiato-surface1);
-    --orca-color-mirror: var(--catppuccin-macchiato-surface0);
+    --orca-color-mirror: var(--catppuccin-macchiato-mantle);
 
     --orca-shadow-menu: rgb(from var(--orca-color-gray-6) r g b / 0.05) 0px 0px 0px 1px, rgb(from var(--orca-color-gray-6) r g b / 0.1) 0px 3px 6px, rgb(from var(--orca-color-gray-6) r g b / 0.2) 0px 9px 24px;
     --orca-shadow-toolbar-list: rgb(from var(--orca-color-gray-6) r g b / 0.05) 0px 2px 0px 1px, rgb(from var(--orca-color-gray-6) r g b / 0.1) 0px 3px 6px, rgb(from var(--orca-color-gray-6) r g b / 0.2) 0px 22px 24px;
@@ -233,8 +233,13 @@
   }
 }
 
+body.kef-round-shell {
+  background-color: var(--catppuccin-latte-crust);
+}
+
 /* Headbar Specific Overrides for Both Light and Dark Modes */
-.sidebar-opened .orca-headbar-sidebar-tools .orca-button {
+.sidebar-opened .orca-headbar-sidebar-tools .orca-button,
+body.kef-round-shell #headbar .orca-button {
   color: inherit;
 }
 
@@ -330,6 +335,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  body.kef-round-shell {
+    background-color: var(--catppuccin-macchiato-crust);
+  }
+
   #sidebar {
     /* Dark mode sidebar - Catppuccin Macchiato inspired */
     --orca-color-dangerous-5: var(--catppuccin-macchiato-red);
@@ -546,5 +555,16 @@
 @media (prefers-color-scheme: dark) {
   .orca-query-calendar-month-view-active {
     background: var(--orca-color-primary-1);
+  }
+}
+
+/* Query list block */
+.orca-query-list-block {
+  --orca-color-mirror: var(--catppuccin-latte-crust);
+}
+
+@media (prefers-color-scheme: dark) {
+  .orca-query-list-block {
+    --orca-color-mirror: var(--catppuccin-macchiato-crust);
   }
 }
