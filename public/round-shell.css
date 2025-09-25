@@ -1,0 +1,52 @@
+/**
+ * Round Shell for Orca Note
+ */
+
+:root {
+  --orca-shadow-round-shell: rgba(15, 15, 15, .04) 0px 0px 5px;
+}
+
+body {
+  background-color: var(--orca-color-gray-8);
+}
+
+#headbar .orca-button {
+  color: var(--orca-color-gray-3);
+}
+
+#sidebar {
+  background-color: transparent;
+}
+
+#main {
+  border-radius: var(--orca-radius-2xl);
+  margin: var(--orca-height-headbar) var(--orca-spacing-md) var(--orca-spacing-md) 0;
+  box-shadow: var(--orca-shadow-round-shell);
+}
+
+.sidebar-closed #main {
+  margin-left: var(--orca-spacing-md);
+}
+
+#main::before {
+  content: "";
+  background: var(--orca-color-bg-1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.orca-block-editor-main {
+  padding-top: var(--orca-spacing-xl);
+}
+
+.orca-panel-drag-handle {
+  top: var(--orca-spacing-xl);
+}
+
+.orca-block-editor-sidetools {
+  top: calc(50px + var(--orca-spacing-xl));
+}

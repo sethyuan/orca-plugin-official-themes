@@ -1,6 +1,6 @@
 {
-  "name": "orca-plugin-catppuccin-theme",
-  "version": "1.0.2",
+  "name": "orca-plugin-official-themes",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
