@@ -419,8 +419,9 @@ body.kef-round-shell #headbar .orca-button {
   }
 }
 
-.orca-settings-shortcuts-header {
-  background-color: var(--sakura-light-surface1);
+.orca-settings-shortcuts-header,
+.orca-command-modal-command-header {
+  background-color: var(--sakura-light-surface0);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -451,8 +452,9 @@ body.kef-round-shell #headbar .orca-button {
     }
   }
 
-  .orca-settings-shortcuts-header {
-    background-color: var(--sakura-dark-surface1);
+  .orca-settings-shortcuts-header,
+  .orca-command-modal-command-header {
+    background-color: var(--sakura-dark-surface0);
   }
 }
 
