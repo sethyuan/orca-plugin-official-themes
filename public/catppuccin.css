@@ -237,11 +237,14 @@ body.kef-round-shell {
   background-color: var(--catppuccin-latte-crust);
   background: linear-gradient(135deg,
       color-mix(in oklab,
-        var(--catppuccin-latte-mauve) 16%,
-        var(--catppuccin-latte-crust)),
+        var(--catppuccin-latte-surface0) 42%,
+        var(--catppuccin-latte-base)) 0%,
       color-mix(in oklab,
-        var(--catppuccin-latte-blue) 12%,
-        var(--catppuccin-latte-base)));
+        var(--catppuccin-latte-overlay1) 48%,
+        var(--catppuccin-latte-mantle)) 55%,
+      color-mix(in oklab,
+        var(--catppuccin-latte-overlay2) 62%,
+        var(--catppuccin-latte-crust)) 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -249,12 +252,12 @@ body.kef-round-shell {
     background-color: var(--catppuccin-macchiato-crust);
     background: radial-gradient(circle at 15% 25%,
         color-mix(in oklab,
-          var(--catppuccin-macchiato-mauve) 30%,
+          var(--catppuccin-macchiato-overlay1) 36%,
           transparent),
         transparent 58%),
       radial-gradient(circle at 85% 20%,
         color-mix(in oklab,
-          var(--catppuccin-macchiato-blue) 28%,
+          var(--catppuccin-macchiato-overlay2) 32%,
           transparent),
         transparent 60%),
       var(--catppuccin-macchiato-crust);
