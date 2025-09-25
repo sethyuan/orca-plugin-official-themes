@@ -1,0 +1,528 @@
+/**
+ * Sandstone Dusk Theme for Orca Note
+ * Light mode: sunlit sandstone formations with warm desert air
+ * Dark mode: twilight mesa silhouettes with ember highlights
+ */
+
+:root {
+  --sand-light-text: #3f2c20;
+  --sand-light-subtext1: #5a3f30;
+  --sand-light-subtext0: #745644;
+  --sand-light-overlay2: #8d6c57;
+  --sand-light-overlay1: #a5826c;
+  --sand-light-overlay0: #bf9a81;
+  --sand-light-surface2: #d5b596;
+  --sand-light-surface1: #e5caa8;
+  --sand-light-surface0: #f1dabe;
+  --sand-light-base: #fdf1e3;
+  --sand-light-mantle: #f6e5d4;
+  --sand-light-crust: #ecd6c0;
+
+  --sand-primary: #ff914d;
+  --sand-ember: #dc6552;
+  --sand-sage: #8ca965;
+  --sand-sun: #f4c067;
+  --sand-sky: #6ca7c7;
+  --sand-night: #5f4a82;
+
+  --orca-color-primary-5: var(--sand-primary) !important;
+  --orca-color-primary-1: color-mix(in oklab, var(--sand-primary) 20%, var(--sand-light-base));
+  --orca-color-primary-2: color-mix(in oklab, var(--sand-primary) 40%, var(--sand-light-base));
+  --orca-color-primary-3: color-mix(in oklab, var(--sand-primary) 60%, var(--sand-light-base));
+  --orca-color-primary-4: color-mix(in oklab, var(--sand-primary) 80%, var(--sand-light-base));
+  --orca-color-primary-6: color-mix(in oklab, var(--sand-primary) 84%, var(--sand-light-text));
+  --orca-color-primary-7: color-mix(in oklab, var(--sand-primary) 65%, var(--sand-light-text));
+  --orca-color-primary-8: color-mix(in oklab, var(--sand-primary) 45%, var(--sand-light-text));
+  --orca-color-primary-9: color-mix(in oklab, var(--sand-primary) 30%, var(--sand-light-text));
+
+  --orca-color-gray-0: var(--sand-light-mantle);
+  --orca-color-gray-1: var(--sand-light-crust);
+  --orca-color-gray-2: var(--sand-light-surface0);
+  --orca-color-gray-3: var(--sand-light-surface1);
+  --orca-color-gray-4: var(--sand-light-surface2);
+  --orca-color-gray-5: var(--sand-light-overlay0);
+  --orca-color-gray-6: var(--sand-light-overlay1);
+  --orca-color-gray-7: var(--sand-light-overlay2);
+  --orca-color-gray-8: var(--sand-light-subtext0);
+  --orca-color-gray-9: var(--sand-light-subtext1);
+
+  --orca-color-success-5: var(--sand-sage);
+  --orca-color-success-1: color-mix(in oklab, var(--sand-sage) 20%, var(--sand-light-base));
+  --orca-color-success-2: color-mix(in oklab, var(--sand-sage) 40%, var(--sand-light-base));
+  --orca-color-success-3: color-mix(in oklab, var(--sand-sage) 60%, var(--sand-light-base));
+  --orca-color-success-4: color-mix(in oklab, var(--sand-sage) 80%, var(--sand-light-base));
+  --orca-color-success-6: color-mix(in oklab, var(--sand-sage) 84%, var(--sand-light-text));
+  --orca-color-success-7: color-mix(in oklab, var(--sand-sage) 65%, var(--sand-light-text));
+  --orca-color-success-8: color-mix(in oklab, var(--sand-sage) 45%, var(--sand-light-text));
+  --orca-color-success-9: color-mix(in oklab, var(--sand-sage) 30%, var(--sand-light-text));
+
+  --orca-color-warning-5: var(--sand-sun);
+  --orca-color-warning-1: color-mix(in oklab, var(--sand-sun) 30%, var(--sand-light-base));
+  --orca-color-warning-2: color-mix(in oklab, var(--sand-sun) 45%, var(--sand-light-base));
+  --orca-color-warning-3: color-mix(in oklab, var(--sand-sun) 65%, var(--sand-light-base));
+  --orca-color-warning-4: color-mix(in oklab, var(--sand-sun) 80%, var(--sand-light-base));
+  --orca-color-warning-6: color-mix(in oklab, var(--sand-sun) 84%, var(--sand-light-text));
+  --orca-color-warning-7: color-mix(in oklab, var(--sand-sun) 65%, var(--sand-light-text));
+  --orca-color-warning-8: color-mix(in oklab, var(--sand-sun) 45%, var(--sand-light-text));
+  --orca-color-warning-9: color-mix(in oklab, var(--sand-sun) 30%, var(--sand-light-text));
+
+  --orca-color-dangerous-5: var(--sand-ember);
+  --orca-color-dangerous-1: color-mix(in oklab, var(--sand-ember) 30%, var(--sand-light-base));
+  --orca-color-dangerous-2: color-mix(in oklab, var(--sand-ember) 45%, var(--sand-light-base));
+  --orca-color-dangerous-3: color-mix(in oklab, var(--sand-ember) 60%, var(--sand-light-base));
+  --orca-color-dangerous-4: color-mix(in oklab, var(--sand-ember) 80%, var(--sand-light-base));
+  --orca-color-dangerous-6: color-mix(in oklab, var(--sand-ember) 84%, var(--sand-light-text));
+  --orca-color-dangerous-7: color-mix(in oklab, var(--sand-ember) 65%, var(--sand-light-text));
+  --orca-color-dangerous-8: color-mix(in oklab, var(--sand-ember) 45%, var(--sand-light-text));
+  --orca-color-dangerous-9: color-mix(in oklab, var(--sand-ember) 30%, var(--sand-light-text));
+
+  --orca-color-bg-1: var(--sand-light-base);
+  --orca-color-bg-2: var(--sand-light-mantle);
+  --orca-color-bg-3: var(--sand-light-crust);
+  --orca-color-bg-blue: color-mix(in oklab, var(--sand-sky) 14%, var(--sand-light-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--sand-sage) 16%, var(--sand-light-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--sand-ember) 18%, var(--sand-light-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--sand-sun) 18%, var(--sand-light-base));
+
+  --orca-color-text-1: var(--sand-light-text);
+  --orca-color-text-2: var(--sand-light-subtext1);
+  --orca-color-text-blue: var(--sand-sky);
+  --orca-color-text-green: var(--sand-sage);
+  --orca-color-text-red: var(--sand-ember);
+  --orca-color-text-yellow: var(--sand-primary);
+
+  --orca-color-border: var(--sand-light-surface0);
+  --orca-color-separator: var(--sand-light-surface0);
+  --orca-color-menu-highlight: color-mix(in oklab, var(--sand-primary) 16%, var(--sand-light-crust));
+  --orca-color-placeholder: var(--sand-light-overlay1);
+  --orca-color-selection: color-mix(in oklab, var(--sand-primary) 16%, var(--sand-light-base));
+  --orca-color-result-highlight: var(--orca-color-bg-yellow);
+  --orca-color-tag: var(--sand-light-surface1);
+  --orca-color-tab: var(--orca-color-primary-4);
+  --orca-color-win-scrollbar: var(--sand-light-overlay0);
+  --orca-color-scope-line: var(--sand-light-surface1);
+  --orca-color-mirror: var(--sand-light-mantle);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sand-dark-text: #fbe6d4;
+    --sand-dark-subtext1: #e6c7b0;
+    --sand-dark-subtext0: #cfa790;
+    --sand-dark-overlay2: #a27f6b;
+    --sand-dark-overlay1: #846355;
+    --sand-dark-overlay0: #6b5043;
+    --sand-dark-surface2: #533f34;
+    --sand-dark-surface1: #46342b;
+    --sand-dark-surface0: #3a2922;
+    --sand-dark-base: #1f1310;
+    --sand-dark-mantle: #261914;
+    --sand-dark-crust: #31221c;
+
+    --orca-color-primary-5: var(--sand-primary) !important;
+    --orca-color-primary-1: color-mix(in oklab, var(--sand-primary) 24%, var(--sand-dark-base));
+    --orca-color-primary-2: color-mix(in oklab, var(--sand-primary) 44%, var(--sand-dark-base));
+    --orca-color-primary-3: color-mix(in oklab, var(--sand-primary) 64%, var(--sand-dark-base));
+    --orca-color-primary-4: color-mix(in oklab, var(--sand-primary) 82%, var(--sand-dark-base));
+    --orca-color-primary-6: color-mix(in oklab, var(--sand-primary) 82%, var(--sand-dark-text));
+    --orca-color-primary-7: color-mix(in oklab, var(--sand-primary) 62%, var(--sand-dark-text));
+    --orca-color-primary-8: color-mix(in oklab, var(--sand-primary) 44%, var(--sand-dark-text));
+    --orca-color-primary-9: color-mix(in oklab, var(--sand-primary) 30%, var(--sand-dark-text));
+
+    --orca-color-gray-0: var(--sand-dark-mantle);
+    --orca-color-gray-1: var(--sand-dark-crust);
+    --orca-color-gray-2: var(--sand-dark-surface0);
+    --orca-color-gray-3: var(--sand-dark-surface1);
+    --orca-color-gray-4: var(--sand-dark-surface2);
+    --orca-color-gray-5: var(--sand-dark-overlay0);
+    --orca-color-gray-6: var(--sand-dark-overlay1);
+    --orca-color-gray-7: var(--sand-dark-overlay2);
+    --orca-color-gray-8: var(--sand-dark-subtext0);
+    --orca-color-gray-9: var(--sand-dark-subtext1);
+
+    --orca-color-success-5: var(--sand-sage);
+    --orca-color-success-1: color-mix(in oklab, var(--sand-sage) 46%, var(--sand-dark-base));
+    --orca-color-success-2: color-mix(in oklab, var(--sand-sage) 60%, var(--sand-dark-base));
+    --orca-color-success-3: color-mix(in oklab, var(--sand-sage) 72%, var(--sand-dark-base));
+    --orca-color-success-4: color-mix(in oklab, var(--sand-sage) 85%, var(--sand-dark-base));
+    --orca-color-success-6: color-mix(in oklab, var(--sand-sage) 85%, var(--sand-dark-text));
+    --orca-color-success-7: color-mix(in oklab, var(--sand-sage) 68%, var(--sand-dark-text));
+    --orca-color-success-8: color-mix(in oklab, var(--sand-sage) 52%, var(--sand-dark-text));
+    --orca-color-success-9: color-mix(in oklab, var(--sand-sage) 36%, var(--sand-dark-text));
+
+    --orca-color-warning-5: var(--sand-sun);
+    --orca-color-warning-1: color-mix(in oklab, var(--sand-sun) 46%, var(--sand-dark-base));
+    --orca-color-warning-2: color-mix(in oklab, var(--sand-sun) 60%, var(--sand-dark-base));
+    --orca-color-warning-3: color-mix(in oklab, var(--sand-sun) 72%, var(--sand-dark-base));
+    --orca-color-warning-4: color-mix(in oklab, var(--sand-sun) 85%, var(--sand-dark-base));
+    --orca-color-warning-6: color-mix(in oklab, var(--sand-sun) 85%, var(--sand-dark-text));
+    --orca-color-warning-7: color-mix(in oklab, var(--sand-sun) 68%, var(--sand-dark-text));
+    --orca-color-warning-8: color-mix(in oklab, var(--sand-sun) 52%, var(--sand-dark-text));
+    --orca-color-warning-9: color-mix(in oklab, var(--sand-sun) 38%, var(--sand-dark-text));
+
+    --orca-color-dangerous-5: var(--sand-ember);
+    --orca-color-dangerous-1: color-mix(in oklab, var(--sand-ember) 46%, var(--sand-dark-base));
+    --orca-color-dangerous-2: color-mix(in oklab, var(--sand-ember) 60%, var(--sand-dark-base));
+    --orca-color-dangerous-3: color-mix(in oklab, var(--sand-ember) 72%, var(--sand-dark-base));
+    --orca-color-dangerous-4: color-mix(in oklab, var(--sand-ember) 85%, var(--sand-dark-base));
+    --orca-color-dangerous-6: color-mix(in oklab, var(--sand-ember) 85%, var(--sand-dark-text));
+    --orca-color-dangerous-7: color-mix(in oklab, var(--sand-ember) 68%, var(--sand-dark-text));
+    --orca-color-dangerous-8: color-mix(in oklab, var(--sand-ember) 52%, var(--sand-dark-text));
+    --orca-color-dangerous-9: color-mix(in oklab, var(--sand-ember) 38%, var(--sand-dark-text));
+
+    --orca-color-bg-1: var(--sand-dark-base);
+    --orca-color-bg-2: var(--sand-dark-mantle);
+    --orca-color-bg-3: var(--sand-dark-crust);
+    --orca-color-bg-blue: color-mix(in oklab, var(--sand-sky) 26%, var(--sand-dark-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--sand-sage) 26%, var(--sand-dark-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--sand-ember) 30%, var(--sand-dark-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--sand-sun) 28%, var(--sand-dark-base));
+
+    --orca-color-text-1: var(--sand-dark-text);
+    --orca-color-text-2: var(--sand-dark-subtext1);
+    --orca-color-text-blue: var(--sand-sky);
+    --orca-color-text-green: var(--sand-sage);
+    --orca-color-text-red: var(--sand-ember);
+    --orca-color-text-yellow: var(--sand-primary);
+
+    --orca-color-border: var(--sand-dark-surface0);
+    --orca-color-separator: var(--sand-dark-surface0);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--sand-primary) 24%, var(--sand-dark-crust));
+    --orca-color-placeholder: var(--sand-dark-overlay0);
+    --orca-color-selection: color-mix(in oklab, var(--sand-primary) 26%, var(--sand-dark-base));
+    --orca-color-result-highlight: var(--orca-color-bg-yellow);
+    --orca-color-tag: var(--sand-dark-surface0);
+    --orca-color-tab: var(--orca-color-primary-6);
+    --orca-color-win-scrollbar: var(--sand-dark-overlay0);
+    --orca-color-scope-line: var(--sand-dark-surface1);
+    --orca-color-mirror: var(--sand-dark-mantle);
+
+    --orca-shadow-menu: rgb(from var(--sand-dark-overlay0) r g b / 0.24) 0px 0px 0px 1px,
+      rgb(from var(--sand-dark-overlay0) r g b / 0.3) 0px 4px 10px,
+      rgb(from var(--sand-dark-overlay0) r g b / 0.36) 0px 20px 30px;
+    --orca-shadow-toolbar-list: rgb(from var(--sand-dark-overlay0) r g b / 0.22) 0px 1px 0px 1px,
+      rgb(from var(--sand-dark-overlay0) r g b / 0.28) 0px 5px 14px,
+      rgb(from var(--sand-dark-overlay0) r g b / 0.32) 0px 26px 32px;
+    --orca-shadow-findreplace: rgb(from var(--sand-dark-overlay2) r g b / 0.08) 0px 0px 0px 1px,
+      rgb(from var(--sand-dark-overlay2) r g b / 0.05) 0px 4px 10px,
+      rgb(from var(--sand-dark-overlay2) r g b / 0.14) 0px 20px 32px;
+    --orca-shadow-popup: rgb(from var(--sand-dark-overlay2) r g b / 0.12) 0px 0px 0px 1px,
+      rgb(from var(--sand-dark-overlay2) r g b / 0.08) 0px 6px 14px,
+      rgb(from var(--sand-dark-overlay2) r g b / 0.18) 0px 30px 44px;
+  }
+}
+
+body.kef-round-shell {
+  background: linear-gradient(145deg, var(--sand-light-crust), var(--sand-light-base));
+}
+
+@media (prefers-color-scheme: dark) {
+  body.kef-round-shell {
+    background: radial-gradient(circle at 70% 20%, rgba(255, 145, 77, 0.18), transparent 55%),
+      radial-gradient(circle at 25% 25%, rgba(108, 167, 199, 0.08), transparent 62%),
+      var(--sand-dark-crust);
+  }
+}
+
+.sidebar-opened .orca-headbar-sidebar-tools .orca-button,
+body.kef-round-shell #headbar .orca-button {
+  color: inherit;
+}
+
+#sidebar {
+  --orca-color-dangerous-5: var(--sand-ember);
+  --orca-color-text-1: var(--sand-light-text);
+  --orca-color-bg-1: var(--sand-light-crust);
+  --orca-color-bg-2: var(--sand-light-mantle);
+  --orca-color-border: var(--sand-light-surface1);
+  --orca-color-text-2: var(--sand-light-subtext1);
+  --orca-color-menu-highlight: color-mix(in oklab, var(--sand-primary) 20%, var(--sand-light-crust));
+  --orca-border-general: 1px solid var(--orca-color-border);
+  --orca-shadow-menu: rgb(from var(--sand-light-overlay0) r g b / 0.1) 0px 0px 0px 1px,
+    rgb(from var(--sand-light-overlay0) r g b / 0.14) 0px 4px 12px,
+    rgb(from var(--sand-light-overlay0) r g b / 0.18) 0px 18px 22px;
+  --orca-color-win-scrollbar: var(--sand-light-overlay0);
+  --orca-color-selection: color-mix(in oklab, var(--sand-primary) 18%, var(--sand-light-crust));
+  --orca-color-placeholder: var(--sand-light-overlay2);
+}
+
+.orca-sidebar-tab-options {
+  background: color-mix(in oklab, var(--sand-light-base) 86%, white);
+  border: 1px solid var(--sand-light-surface0);
+}
+
+.orca-sidebar-tab-options .orca-segmented-item {
+  color: var(--sand-light-overlay2);
+}
+
+.orca-sidebar-tab-options .orca-segmented-item.orca-selected {
+  color: var(--sand-light-text);
+}
+
+.orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected,
+.orca-sidebar-tab-options.orca-segmented .orca-transition {
+  background: color-mix(in oklab, var(--sand-light-mantle) 88%, white);
+  box-shadow: var(--orca-shadow-segmented);
+}
+
+.orca-sidebar-create-aliased-btn.orca-button {
+  background-color: var(--sand-light-surface0);
+  color: var(--sand-light-overlay1);
+}
+
+.orca-sidebar-create-aliased-btn.orca-button:hover {
+  background-color: var(--sand-light-surface1);
+  color: var(--sand-light-text);
+}
+
+#sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+  background-color: var(--sand-light-surface1);
+  color: var(--sand-light-overlay2);
+}
+
+#sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
+  background-color: var(--sand-light-surface1);
+}
+
+#sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+  background-color: var(--sand-light-surface0);
+  color: var(--sand-light-overlay1);
+}
+
+#sidebar .orca-menu {
+  background: color-mix(in oklab, var(--sand-light-mantle) 82%, white);
+  border: 1px solid var(--sand-light-surface0);
+  box-shadow: rgb(from var(--sand-light-overlay0) r g b / 0.16) 0px 0px 0px 1px,
+    rgb(from var(--sand-light-overlay0) r g b / 0.2) 0px 4px 14px,
+    rgb(from var(--sand-light-overlay0) r g b / 0.24) 0px 18px 28px;
+}
+
+#sidebar .orca-button.solid {
+  color: var(--sand-light-base);
+}
+
+.orca-calendar .day:not(.value):hover,
+.orca-calendar .month:not(.value):hover,
+.orca-calendar .year:not(.value):hover {
+  background-color: var(--sand-light-surface2);
+  color: var(--sand-light-text);
+}
+
+.orca-calendar .value {
+  background: linear-gradient(130deg, var(--sand-primary), var(--sand-ember));
+  color: var(--sand-light-base);
+}
+
+@media (prefers-color-scheme: dark) {
+  #sidebar {
+    --orca-color-dangerous-5: var(--sand-ember);
+    --orca-color-text-1: var(--sand-dark-text);
+    --orca-color-bg-1: var(--sand-dark-mantle);
+    --orca-color-bg-2: var(--sand-dark-base);
+    --orca-color-border: var(--sand-dark-surface1);
+    --orca-color-text-2: var(--sand-dark-subtext1);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--sand-primary) 26%, var(--sand-dark-crust));
+    --orca-border-general: 1px solid var(--orca-color-border);
+    --orca-shadow-menu: rgb(from var(--sand-dark-overlay0) r g b / 0.26) 0px 0px 0px 1px,
+      rgb(from var(--sand-dark-overlay0) r g b / 0.32) 0px 5px 12px,
+      rgb(from var(--sand-dark-overlay0) r g b / 0.38) 0px 20px 30px;
+    --orca-color-win-scrollbar: var(--sand-dark-overlay0);
+    --orca-color-selection: color-mix(in oklab, var(--sand-primary) 24%, var(--sand-dark-crust));
+    --orca-color-placeholder: var(--sand-dark-overlay1);
+  }
+
+  .orca-sidebar-tab-options {
+    background: linear-gradient(140deg, rgba(255, 145, 77, 0.18), rgba(95, 74, 130, 0.12));
+    border: 1px solid var(--sand-dark-surface0);
+  }
+
+  .orca-sidebar-tab-options .orca-segmented-item {
+    color: var(--sand-dark-overlay2);
+  }
+
+  .orca-sidebar-tab-options .orca-segmented-item.orca-selected {
+    color: var(--sand-dark-text);
+  }
+
+  .orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected,
+  .orca-sidebar-tab-options.orca-segmented .orca-transition {
+    background: color-mix(in oklab, var(--sand-dark-base) 80%, black);
+    box-shadow: var(--orca-shadow-segmented);
+  }
+
+  .orca-sidebar-create-aliased-btn.orca-button {
+    background-color: var(--sand-dark-surface0);
+    color: var(--sand-dark-subtext1);
+  }
+
+  .orca-sidebar-create-aliased-btn.orca-button:hover {
+    background-color: var(--sand-dark-surface1);
+    color: var(--sand-dark-text);
+  }
+
+  #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+    background: color-mix(in oklab, var(--sand-dark-surface0) 78%, var(--sand-primary) 12%);
+    color: var(--sand-dark-overlay2);
+  }
+
+  #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
+    background: color-mix(in oklab, var(--sand-dark-surface2) 78%, var(--sand-dark-base));
+  }
+
+  #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+    background: var(--sand-dark-surface0);
+    color: var(--sand-dark-overlay1);
+  }
+
+  #sidebar .orca-menu {
+    background: color-mix(in oklab, var(--sand-dark-mantle) 88%, var(--sand-dark-base));
+    border: 1px solid var(--sand-dark-surface0);
+    box-shadow: rgb(from var(--sand-dark-overlay0) r g b / 0.28) 0px 0px 0px 1px,
+      rgb(from var(--sand-dark-overlay0) r g b / 0.34) 0px 6px 16px,
+      rgb(from var(--sand-dark-overlay0) r g b / 0.42) 0px 24px 36px;
+  }
+
+  #sidebar .orca-button.solid {
+    color: var(--sand-dark-base);
+  }
+
+  .orca-calendar .day:not(.value):hover,
+  .orca-calendar .month:not(.value):hover,
+  .orca-calendar .year:not(.value):hover {
+    background-color: var(--sand-dark-surface2);
+    color: var(--sand-dark-text);
+  }
+
+  .orca-calendar .value {
+    background: linear-gradient(130deg, var(--sand-primary), var(--sand-ember));
+    color: var(--sand-dark-base);
+  }
+}
+
+@scope (.orca-settings > .sections) {
+  :scope {
+    background-color: var(--sand-light-surface0);
+  }
+
+  .item.selected,
+  .item:hover,
+  .plugin-item.selected,
+  .plugin-item:hover {
+    background-color: var(--sand-light-surface1);
+  }
+}
+
+@scope (.orca-settings > .views .shortcut-input) {
+  .recording {
+    background-color: var(--orca-color-primary-1);
+  }
+}
+
+.orca-settings-shortcuts-header {
+  background-color: var(--sand-light-surface1);
+}
+
+@media (prefers-color-scheme: dark) {
+  @scope (.orca-settings > .sections) {
+    :scope {
+      background-color: var(--sand-dark-surface0);
+    }
+
+    .item.selected,
+    .item:hover,
+    .plugin-item.selected,
+    .plugin-item:hover {
+      background-color: var(--sand-dark-surface1);
+    }
+  }
+
+  @scope (.orca-settings > .views) {
+
+    .header-row,
+    .header-row.row:hover {
+      background-color: var(--sand-dark-surface0);
+    }
+  }
+
+  @scope (.orca-settings > .views .shortcut-input) {
+    .recording {
+      background-color: var(--orca-color-primary-7);
+    }
+  }
+
+  .orca-settings-shortcuts-header {
+    background-color: var(--sand-dark-surface1);
+  }
+}
+
+.orca-button.dangerous {
+  background: var(--sand-ember);
+  color: var(--sand-light-base);
+}
+
+.orca-button.dangerous:active {
+  background: color-mix(in oklab, var(--sand-ember) 76%, black);
+}
+
+.orca-button.soft {
+  background: var(--sand-light-surface1);
+  color: var(--sand-light-text);
+}
+
+.orca-button.soft:active {
+  background: var(--sand-light-surface2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .orca-button.dangerous {
+    background: var(--sand-ember);
+    color: var(--sand-dark-base);
+  }
+
+  .orca-button.dangerous:active {
+    background: color-mix(in oklab, var(--sand-ember) 76%, white);
+  }
+
+  .orca-button.soft {
+    background: color-mix(in oklab, var(--sand-dark-surface1) 86%, var(--sand-dark-surface0));
+    color: var(--sand-dark-text);
+  }
+
+  .orca-button.soft:active {
+    background: var(--sand-dark-surface2);
+  }
+
+  .orca-segmented {
+    background-color: var(--orca-color-gray-3);
+  }
+
+  .orca-select-button-selection {
+    background: var(--orca-color-primary-3);
+  }
+
+  .orca-query-calendar-month-view-active {
+    background: var(--orca-color-primary-1);
+  }
+}
+
+.orca-query-list-block {
+  --orca-color-mirror: var(--sand-light-crust);
+}
+
+@media (prefers-color-scheme: dark) {
+  .orca-query-list-block {
+    --orca-color-mirror: var(--sand-dark-crust);
+  }
+}
+
+::selection {
+  background: color-mix(in oklab, var(--sand-primary) 34%, transparent);
+  color: var(--sand-light-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background: color-mix(in oklab, var(--sand-primary) 28%, transparent);
+    color: var(--sand-dark-text);
+  }
+}

@@ -1,0 +1,538 @@
+/**
+ * Aurora Borealis Theme for Orca Note
+ * Light mode: Polar dawn with cool daylight haze
+ * Dark mode: Arctic night with vivid aurora ribbons
+ */
+
+/* Aurora Borealis Light Mode Colors */
+:root {
+  /* Base palette */
+  --aurora-light-text: #1c2533;
+  --aurora-light-subtext1: #2f3a4a;
+  --aurora-light-subtext0: #465468;
+  --aurora-light-overlay2: #5c6d83;
+  --aurora-light-overlay1: #74859c;
+  --aurora-light-overlay0: #8c9fba;
+  --aurora-light-surface2: #a7bbd4;
+  --aurora-light-surface1: #c1d2e6;
+  --aurora-light-surface0: #d7e3f1;
+  --aurora-light-base: #eef4fb;
+  --aurora-light-mantle: #e2ecf7;
+  --aurora-light-crust: #d4e0f0;
+
+  /* Accent ribbon hues */
+  --aurora-primary: #38f9d7;
+  --aurora-teal: #22d3ee;
+  --aurora-indigo: #6366f1;
+  --aurora-violet: #8b5cf6;
+  --aurora-rose: #ec4899;
+  --aurora-gold: #facc15;
+
+  /* Orca variable overrides — light mode */
+  --orca-color-primary-5: var(--aurora-primary) !important;
+  --orca-color-primary-1: color-mix(in oklab, var(--aurora-primary) 15%, var(--aurora-light-base));
+  --orca-color-primary-2: color-mix(in oklab, var(--aurora-primary) 40%, var(--aurora-light-base));
+  --orca-color-primary-3: color-mix(in oklab, var(--aurora-primary) 65%, var(--aurora-light-base));
+  --orca-color-primary-4: color-mix(in oklab, var(--aurora-primary) 85%, var(--aurora-light-base));
+  --orca-color-primary-6: color-mix(in oklab, var(--aurora-primary) 85%, var(--aurora-light-text));
+  --orca-color-primary-7: color-mix(in oklab, var(--aurora-primary) 65%, var(--aurora-light-text));
+  --orca-color-primary-8: color-mix(in oklab, var(--aurora-primary) 45%, var(--aurora-light-text));
+  --orca-color-primary-9: color-mix(in oklab, var(--aurora-primary) 30%, var(--aurora-light-text));
+
+  --orca-color-gray-0: var(--aurora-light-mantle);
+  --orca-color-gray-1: var(--aurora-light-crust);
+  --orca-color-gray-2: var(--aurora-light-surface0);
+  --orca-color-gray-3: var(--aurora-light-surface1);
+  --orca-color-gray-4: var(--aurora-light-surface2);
+  --orca-color-gray-5: var(--aurora-light-overlay0);
+  --orca-color-gray-6: var(--aurora-light-overlay1);
+  --orca-color-gray-7: var(--aurora-light-overlay2);
+  --orca-color-gray-8: var(--aurora-light-subtext0);
+  --orca-color-gray-9: var(--aurora-light-subtext1);
+
+  --orca-color-success-5: #22c55e;
+  --orca-color-success-1: color-mix(in oklab, #22c55e 35%, var(--aurora-light-base));
+  --orca-color-success-2: color-mix(in oklab, #22c55e 50%, var(--aurora-light-base));
+  --orca-color-success-3: color-mix(in oklab, #22c55e 65%, var(--aurora-light-base));
+  --orca-color-success-4: color-mix(in oklab, #22c55e 80%, var(--aurora-light-base));
+  --orca-color-success-6: color-mix(in oklab, #22c55e 85%, var(--aurora-light-text));
+  --orca-color-success-7: color-mix(in oklab, #22c55e 70%, var(--aurora-light-text));
+  --orca-color-success-8: color-mix(in oklab, #22c55e 50%, var(--aurora-light-text));
+  --orca-color-success-9: color-mix(in oklab, #22c55e 35%, var(--aurora-light-text));
+
+  --orca-color-warning-5: var(--aurora-gold);
+  --orca-color-warning-1: color-mix(in oklab, var(--aurora-gold) 35%, var(--aurora-light-base));
+  --orca-color-warning-2: color-mix(in oklab, var(--aurora-gold) 50%, var(--aurora-light-base));
+  --orca-color-warning-3: color-mix(in oklab, var(--aurora-gold) 65%, var(--aurora-light-base));
+  --orca-color-warning-4: color-mix(in oklab, var(--aurora-gold) 80%, var(--aurora-light-base));
+  --orca-color-warning-6: color-mix(in oklab, var(--aurora-gold) 85%, var(--aurora-light-text));
+  --orca-color-warning-7: color-mix(in oklab, var(--aurora-gold) 70%, var(--aurora-light-text));
+  --orca-color-warning-8: color-mix(in oklab, var(--aurora-gold) 50%, var(--aurora-light-text));
+  --orca-color-warning-9: color-mix(in oklab, var(--aurora-gold) 35%, var(--aurora-light-text));
+
+  --orca-color-dangerous-5: var(--aurora-rose);
+  --orca-color-dangerous-1: color-mix(in oklab, var(--aurora-rose) 35%, var(--aurora-light-base));
+  --orca-color-dangerous-2: color-mix(in oklab, var(--aurora-rose) 50%, var(--aurora-light-base));
+  --orca-color-dangerous-3: color-mix(in oklab, var(--aurora-rose) 65%, var(--aurora-light-base));
+  --orca-color-dangerous-4: color-mix(in oklab, var(--aurora-rose) 80%, var(--aurora-light-base));
+  --orca-color-dangerous-6: color-mix(in oklab, var(--aurora-rose) 85%, var(--aurora-light-text));
+  --orca-color-dangerous-7: color-mix(in oklab, var(--aurora-rose) 70%, var(--aurora-light-text));
+  --orca-color-dangerous-8: color-mix(in oklab, var(--aurora-rose) 50%, var(--aurora-light-text));
+  --orca-color-dangerous-9: color-mix(in oklab, var(--aurora-rose) 35%, var(--aurora-light-text));
+
+  --orca-color-bg-1: var(--aurora-light-base);
+  --orca-color-bg-2: var(--aurora-light-mantle);
+  --orca-color-bg-3: var(--aurora-light-crust);
+  --orca-color-bg-blue: color-mix(in oklab, var(--aurora-teal) 18%, var(--aurora-light-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--aurora-primary) 18%, var(--aurora-light-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--aurora-rose) 18%, var(--aurora-light-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--aurora-gold) 18%, var(--aurora-light-base));
+
+  --orca-color-text-1: var(--aurora-light-text);
+  --orca-color-text-2: var(--aurora-light-subtext1);
+  --orca-color-text-blue: var(--aurora-teal);
+  --orca-color-text-green: var(--aurora-primary);
+  --orca-color-text-red: var(--aurora-rose);
+  --orca-color-text-yellow: var(--aurora-gold);
+
+  --orca-color-border: var(--aurora-light-surface0);
+  --orca-color-separator: var(--aurora-light-surface0);
+  --orca-color-menu-highlight: color-mix(in oklab, var(--aurora-indigo) 25%, var(--aurora-light-base));
+  --orca-color-placeholder: var(--aurora-light-overlay0);
+  --orca-color-selection: color-mix(in oklab, var(--aurora-indigo) 18%, var(--aurora-light-base));
+  --orca-color-result-highlight: var(--orca-color-bg-yellow);
+  --orca-color-tag: var(--aurora-light-surface0);
+  --orca-color-tab: var(--orca-color-primary-4);
+  --orca-color-win-scrollbar: var(--aurora-light-overlay0);
+  --orca-color-scope-line: var(--aurora-light-surface1);
+  --orca-color-mirror: var(--aurora-light-mantle);
+}
+
+/* Aurora Borealis Dark Mode Colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --aurora-dark-text: #d9f0ff;
+    --aurora-dark-subtext1: #aac7e4;
+    --aurora-dark-subtext0: #7fa2c6;
+    --aurora-dark-overlay2: #587aa5;
+    --aurora-dark-overlay1: #41628e;
+    --aurora-dark-overlay0: #345274;
+    --aurora-dark-surface2: #2a4563;
+    --aurora-dark-surface1: #223a55;
+    --aurora-dark-surface0: #1b3047;
+    --aurora-dark-base: #061423;
+    --aurora-dark-mantle: #091a2d;
+    --aurora-dark-crust: #0f233a;
+
+    --orca-color-primary-5: var(--aurora-primary) !important;
+    --orca-color-primary-1: color-mix(in oklab, var(--aurora-primary) 20%, var(--aurora-dark-base));
+    --orca-color-primary-2: color-mix(in oklab, var(--aurora-primary) 45%, var(--aurora-dark-base));
+    --orca-color-primary-3: color-mix(in oklab, var(--aurora-primary) 65%, var(--aurora-dark-base));
+    --orca-color-primary-4: color-mix(in oklab, var(--aurora-primary) 85%, var(--aurora-dark-base));
+    --orca-color-primary-6: color-mix(in oklab, var(--aurora-primary) 85%, var(--aurora-dark-text));
+    --orca-color-primary-7: color-mix(in oklab, var(--aurora-primary) 65%, var(--aurora-dark-text));
+    --orca-color-primary-8: color-mix(in oklab, var(--aurora-primary) 45%, var(--aurora-dark-text));
+    --orca-color-primary-9: color-mix(in oklab, var(--aurora-primary) 32%, var(--aurora-dark-text));
+
+    --orca-color-gray-0: var(--aurora-dark-mantle);
+    --orca-color-gray-1: var(--aurora-dark-crust);
+    --orca-color-gray-2: var(--aurora-dark-surface0);
+    --orca-color-gray-3: var(--aurora-dark-surface1);
+    --orca-color-gray-4: var(--aurora-dark-surface2);
+    --orca-color-gray-5: var(--aurora-dark-overlay0);
+    --orca-color-gray-6: var(--aurora-dark-overlay1);
+    --orca-color-gray-7: var(--aurora-dark-overlay2);
+    --orca-color-gray-8: var(--aurora-dark-subtext0);
+    --orca-color-gray-9: var(--aurora-dark-subtext1);
+
+    --orca-color-success-5: #22c55e;
+    --orca-color-success-1: color-mix(in oklab, #22c55e 40%, var(--aurora-dark-base));
+    --orca-color-success-2: color-mix(in oklab, #22c55e 55%, var(--aurora-dark-base));
+    --orca-color-success-3: color-mix(in oklab, #22c55e 70%, var(--aurora-dark-base));
+    --orca-color-success-4: color-mix(in oklab, #22c55e 85%, var(--aurora-dark-base));
+    --orca-color-success-6: color-mix(in oklab, #22c55e 85%, var(--aurora-dark-text));
+    --orca-color-success-7: color-mix(in oklab, #22c55e 70%, var(--aurora-dark-text));
+    --orca-color-success-8: color-mix(in oklab, #22c55e 55%, var(--aurora-dark-text));
+    --orca-color-success-9: color-mix(in oklab, #22c55e 40%, var(--aurora-dark-text));
+
+    --orca-color-warning-5: var(--aurora-gold);
+    --orca-color-warning-1: color-mix(in oklab, var(--aurora-gold) 40%, var(--aurora-dark-base));
+    --orca-color-warning-2: color-mix(in oklab, var(--aurora-gold) 55%, var(--aurora-dark-base));
+    --orca-color-warning-3: color-mix(in oklab, var(--aurora-gold) 70%, var(--aurora-dark-base));
+    --orca-color-warning-4: color-mix(in oklab, var(--aurora-gold) 85%, var(--aurora-dark-base));
+    --orca-color-warning-6: color-mix(in oklab, var(--aurora-gold) 85%, var(--aurora-dark-text));
+    --orca-color-warning-7: color-mix(in oklab, var(--aurora-gold) 70%, var(--aurora-dark-text));
+    --orca-color-warning-8: color-mix(in oklab, var(--aurora-gold) 55%, var(--aurora-dark-text));
+    --orca-color-warning-9: color-mix(in oklab, var(--aurora-gold) 40%, var(--aurora-dark-text));
+
+    --orca-color-dangerous-5: var(--aurora-rose);
+    --orca-color-dangerous-1: color-mix(in oklab, var(--aurora-rose) 40%, var(--aurora-dark-base));
+    --orca-color-dangerous-2: color-mix(in oklab, var(--aurora-rose) 55%, var(--aurora-dark-base));
+    --orca-color-dangerous-3: color-mix(in oklab, var(--aurora-rose) 70%, var(--aurora-dark-base));
+    --orca-color-dangerous-4: color-mix(in oklab, var(--aurora-rose) 85%, var(--aurora-dark-base));
+    --orca-color-dangerous-6: color-mix(in oklab, var(--aurora-rose) 85%, var(--aurora-dark-text));
+    --orca-color-dangerous-7: color-mix(in oklab, var(--aurora-rose) 70%, var(--aurora-dark-text));
+    --orca-color-dangerous-8: color-mix(in oklab, var(--aurora-rose) 55%, var(--aurora-dark-text));
+    --orca-color-dangerous-9: color-mix(in oklab, var(--aurora-rose) 40%, var(--aurora-dark-text));
+
+    --orca-color-bg-1: var(--aurora-dark-base);
+    --orca-color-bg-2: var(--aurora-dark-mantle);
+    --orca-color-bg-3: var(--aurora-dark-crust);
+    --orca-color-bg-blue: color-mix(in oklab, var(--aurora-teal) 28%, var(--aurora-dark-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--aurora-primary) 28%, var(--aurora-dark-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--aurora-rose) 28%, var(--aurora-dark-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--aurora-gold) 28%, var(--aurora-dark-base));
+
+    --orca-color-text-1: var(--aurora-dark-text);
+    --orca-color-text-2: var(--aurora-dark-subtext1);
+    --orca-color-text-blue: var(--aurora-teal);
+    --orca-color-text-green: var(--aurora-primary);
+    --orca-color-text-red: var(--aurora-rose);
+    --orca-color-text-yellow: var(--aurora-gold);
+
+    --orca-color-border: var(--aurora-dark-surface0);
+    --orca-color-separator: var(--aurora-dark-surface0);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--aurora-indigo) 32%, var(--aurora-dark-base));
+    --orca-color-placeholder: var(--aurora-dark-overlay0);
+    --orca-color-selection: oklch(from var(--orca-color-primary-5) l c h / 55%);
+    --orca-color-result-highlight: var(--orca-color-bg-yellow);
+    --orca-color-tag: var(--aurora-dark-surface0);
+    --orca-color-tab: var(--orca-color-primary-6);
+    --orca-color-win-scrollbar: var(--aurora-dark-overlay0);
+    --orca-color-scope-line: var(--aurora-dark-surface1);
+    --orca-color-mirror: var(--aurora-dark-mantle);
+
+    --orca-shadow-menu: rgb(from var(--orca-color-gray-6) r g b / 0.05) 0px 0px 0px 1px,
+      rgb(from var(--orca-color-gray-6) r g b / 0.1) 0px 3px 6px,
+      rgb(from var(--orca-color-gray-6) r g b / 0.2) 0px 12px 30px;
+    --orca-shadow-toolbar-list: rgb(from var(--orca-color-gray-6) r g b / 0.05) 0px 2px 0px 1px,
+      rgb(from var(--orca-color-gray-6) r g b / 0.1) 0px 4px 8px,
+      rgb(from var(--orca-color-gray-6) r g b / 0.2) 0px 24px 28px;
+    --orca-shadow-findreplace: rgb(from var(--orca-color-gray-9) r g b / 0.04) 0px 0px 0px 1px,
+      rgb(from var(--orca-color-gray-9) r g b / 0.03) 0px 4px 8px,
+      rgb(from var(--orca-color-gray-9) r g b / 0.08) 0px 16px 32px;
+    --orca-shadow-popup: rgb(from var(--orca-color-gray-9) r g b / 0.08) 0px 0px 0px 1px,
+      rgb(from var(--orca-color-gray-9) r g b / 0.04) 0px 4px 12px,
+      rgb(from var(--orca-color-gray-9) r g b / 0.12) 0px 22px 44px;
+  }
+}
+
+body.kef-round-shell {
+  background: linear-gradient(145deg, var(--aurora-light-crust), var(--aurora-light-mantle));
+}
+
+@media (prefers-color-scheme: dark) {
+  body.kef-round-shell {
+    background: radial-gradient(circle at 20% 20%, rgba(56, 249, 215, 0.16), transparent 55%),
+      radial-gradient(circle at 80% 25%, rgba(99, 102, 241, 0.18), transparent 60%),
+      var(--aurora-dark-crust);
+  }
+}
+
+.sidebar-opened .orca-headbar-sidebar-tools .orca-button,
+body.kef-round-shell #headbar .orca-button {
+  color: inherit;
+}
+
+/* Sidebar */
+#sidebar {
+  --orca-color-dangerous-5: var(--aurora-rose);
+  --orca-color-text-1: var(--aurora-light-text);
+  --orca-color-bg-1: var(--aurora-light-crust);
+  --orca-color-bg-2: var(--aurora-light-mantle);
+  --orca-color-border: var(--aurora-light-surface1);
+  --orca-color-text-2: var(--aurora-light-subtext1);
+  --orca-color-menu-highlight: color-mix(in oklab, var(--aurora-indigo) 20%, var(--aurora-light-crust));
+  --orca-border-general: 1px solid var(--orca-color-border);
+  --orca-shadow-menu: rgb(from var(--aurora-light-overlay0) r g b / 0.08) 0px 0px 0px 1px,
+    rgb(from var(--aurora-light-overlay0) r g b / 0.12) 0px 2px 6px,
+    rgb(from var(--aurora-light-overlay0) r g b / 0.18) 0px 12px 18px;
+  --orca-color-win-scrollbar: var(--aurora-light-overlay0);
+  --orca-color-selection: color-mix(in oklab, var(--aurora-indigo) 18%, var(--aurora-light-crust));
+  --orca-color-placeholder: var(--aurora-light-overlay1);
+}
+
+.orca-sidebar-tab-options {
+  background: linear-gradient(135deg, var(--aurora-light-mantle), var(--aurora-light-base));
+  border: 1px solid var(--aurora-light-surface0);
+}
+
+.orca-sidebar-tab-options .orca-segmented-item {
+  color: var(--aurora-light-overlay2);
+}
+
+.orca-sidebar-tab-options .orca-segmented-item.orca-selected {
+  color: var(--aurora-light-text);
+}
+
+.orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected,
+.orca-sidebar-tab-options.orca-segmented .orca-transition {
+  background: color-mix(in oklab, var(--aurora-light-base) 85%, white);
+  box-shadow: var(--orca-shadow-segmented);
+}
+
+.orca-sidebar-create-aliased-btn.orca-button {
+  background-color: var(--aurora-light-surface0);
+  color: var(--aurora-light-subtext1);
+}
+
+.orca-sidebar-create-aliased-btn.orca-button:hover {
+  background-color: var(--aurora-light-surface1);
+  color: var(--aurora-light-text);
+}
+
+#sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+  background-color: var(--aurora-light-surface0);
+  color: var(--aurora-light-overlay2);
+}
+
+#sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
+  background-color: var(--aurora-light-surface1);
+}
+
+#sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+  background-color: var(--aurora-light-surface0);
+  color: var(--aurora-light-overlay1);
+}
+
+#sidebar .orca-menu {
+  background: color-mix(in oklab, var(--aurora-light-mantle) 70%, white);
+  border: 1px solid var(--aurora-light-surface0);
+  box-shadow: rgb(from var(--aurora-light-overlay0) r g b / 0.1) 0px 0px 0px 1px,
+    rgb(from var(--aurora-light-overlay0) r g b / 0.15) 0px 2px 6px,
+    rgb(from var(--aurora-light-overlay0) r g b / 0.2) 0px 10px 20px;
+}
+
+#sidebar .orca-button.solid {
+  color: var(--aurora-light-base);
+}
+
+.orca-calendar .day:not(.value):hover,
+.orca-calendar .month:not(.value):hover,
+.orca-calendar .year:not(.value):hover {
+  background-color: var(--aurora-light-surface2);
+  color: var(--aurora-light-text);
+}
+
+.orca-calendar .value {
+  background: linear-gradient(120deg, var(--aurora-primary), var(--aurora-indigo));
+  color: var(--aurora-light-base);
+}
+
+@media (prefers-color-scheme: dark) {
+  #sidebar {
+    --orca-color-dangerous-5: var(--aurora-rose);
+    --orca-color-text-1: var(--aurora-dark-text);
+    --orca-color-bg-1: var(--aurora-dark-mantle);
+    --orca-color-bg-2: var(--aurora-dark-base);
+    --orca-color-border: var(--aurora-dark-surface1);
+    --orca-color-text-2: var(--aurora-dark-subtext1);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--aurora-indigo) 28%, var(--aurora-dark-crust));
+    --orca-border-general: 1px solid var(--orca-color-border);
+    --orca-shadow-menu: rgb(from var(--aurora-dark-base) r g b / 0.22) 0px 0px 0px 1px,
+      rgb(from var(--aurora-dark-base) r g b / 0.28) 0px 3px 6px,
+      rgb(from var(--aurora-dark-base) r g b / 0.38) 0px 14px 26px;
+    --orca-color-win-scrollbar: var(--aurora-dark-overlay0);
+    --orca-color-selection: color-mix(in oklab, var(--aurora-indigo) 24%, var(--aurora-dark-crust));
+    --orca-color-placeholder: var(--aurora-dark-overlay1);
+  }
+
+  .orca-sidebar-tab-options {
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(99, 102, 241, 0.05));
+    border: 1px solid var(--aurora-dark-surface0);
+  }
+
+  .orca-sidebar-tab-options .orca-segmented-item {
+    color: var(--aurora-dark-overlay2);
+  }
+
+  .orca-sidebar-tab-options .orca-segmented-item.orca-selected {
+    color: var(--aurora-dark-text);
+  }
+
+  .orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected,
+  .orca-sidebar-tab-options.orca-segmented .orca-transition {
+    background: color-mix(in oklab, var(--aurora-dark-base) 82%, black);
+    box-shadow: var(--orca-shadow-segmented);
+  }
+
+  .orca-sidebar-create-aliased-btn.orca-button {
+    background-color: var(--aurora-dark-surface0);
+    color: var(--aurora-dark-subtext1);
+  }
+
+  .orca-sidebar-create-aliased-btn.orca-button:hover {
+    background-color: var(--aurora-dark-surface1);
+    color: var(--aurora-dark-text);
+  }
+
+  #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+    background: color-mix(in oklab, var(--aurora-dark-surface0) 70%, var(--aurora-indigo) 10%);
+    color: var(--aurora-dark-overlay2);
+  }
+
+  #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
+    background: color-mix(in oklab, var(--aurora-dark-surface2) 75%, var(--aurora-dark-base));
+  }
+
+  #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+    background: var(--aurora-dark-surface0);
+    color: var(--aurora-dark-overlay1);
+  }
+
+  #sidebar .orca-menu {
+    background: color-mix(in oklab, var(--aurora-dark-mantle) 85%, var(--aurora-dark-base));
+    border: 1px solid var(--aurora-dark-surface0);
+    box-shadow: rgb(from var(--aurora-dark-base) r g b / 0.28) 0px 0px 0px 1px,
+      rgb(from var(--aurora-dark-base) r g b / 0.32) 0px 4px 10px,
+      rgb(from var(--aurora-dark-base) r g b / 0.42) 0px 16px 30px;
+  }
+
+  #sidebar .orca-button.solid {
+    color: var(--aurora-dark-base);
+  }
+
+  .orca-calendar .day:not(.value):hover,
+  .orca-calendar .month:not(.value):hover,
+  .orca-calendar .year:not(.value):hover {
+    background-color: var(--aurora-dark-surface2);
+    color: var(--aurora-dark-text);
+  }
+
+  .orca-calendar .value {
+    background: linear-gradient(120deg, var(--aurora-primary), var(--aurora-indigo));
+    color: var(--aurora-dark-base);
+  }
+}
+
+/* Settings modal */
+@scope (.orca-settings > .sections) {
+  :scope {
+    background-color: var(--aurora-light-surface0);
+  }
+
+  .item.selected,
+  .item:hover,
+  .plugin-item.selected,
+  .plugin-item:hover {
+    background-color: var(--aurora-light-surface1);
+  }
+}
+
+@scope (.orca-settings > .views .shortcut-input) {
+  .recording {
+    background-color: var(--orca-color-primary-1);
+  }
+}
+
+.orca-settings-shortcuts-header {
+  background-color: var(--aurora-light-surface1);
+}
+
+@media (prefers-color-scheme: dark) {
+  @scope (.orca-settings > .sections) {
+    :scope {
+      background-color: var(--aurora-dark-surface0);
+    }
+
+    .item.selected,
+    .item:hover,
+    .plugin-item.selected,
+    .plugin-item:hover {
+      background-color: var(--aurora-dark-surface1);
+    }
+  }
+
+  @scope (.orca-settings > .views) {
+
+    .header-row,
+    .header-row.row:hover {
+      background-color: var(--aurora-dark-surface0);
+    }
+  }
+
+  @scope (.orca-settings > .views .shortcut-input) {
+    .recording {
+      background-color: var(--orca-color-primary-7);
+    }
+  }
+
+  .orca-settings-shortcuts-header {
+    background-color: var(--aurora-dark-surface1);
+  }
+}
+
+/* Buttons */
+.orca-button.dangerous {
+  background: var(--aurora-rose);
+  color: var(--aurora-light-base);
+}
+
+.orca-button.dangerous:active {
+  background: color-mix(in oklab, var(--aurora-rose) 78%, black);
+}
+
+.orca-button.soft {
+  background: var(--aurora-light-surface1);
+  color: var(--aurora-light-text);
+}
+
+.orca-button.soft:active {
+  background: var(--aurora-light-surface2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .orca-button.dangerous {
+    background: var(--aurora-rose);
+    color: var(--aurora-dark-base);
+  }
+
+  .orca-button.dangerous:active {
+    background: color-mix(in oklab, var(--aurora-rose) 78%, white);
+  }
+
+  .orca-button.soft {
+    background: color-mix(in oklab, var(--aurora-dark-surface1) 85%, var(--aurora-dark-surface0));
+    color: var(--aurora-dark-text);
+  }
+
+  .orca-button.soft:active {
+    background: var(--aurora-dark-surface2);
+  }
+
+  .orca-segmented {
+    background-color: var(--orca-color-gray-3);
+  }
+
+  .orca-select-button-selection {
+    background: var(--orca-color-primary-3);
+  }
+
+  .orca-query-calendar-month-view-active {
+    background: var(--orca-color-primary-1);
+  }
+}
+
+/* Query list block */
+.orca-query-list-block {
+  --orca-color-mirror: var(--aurora-light-crust);
+}
+
+@media (prefers-color-scheme: dark) {
+  .orca-query-list-block {
+    --orca-color-mirror: var(--aurora-dark-crust);
+  }
+}
+
+/* Selection glow */
+::selection {
+  background: color-mix(in oklab, var(--aurora-indigo) 55%, transparent);
+  color: var(--aurora-light-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background: color-mix(in oklab, var(--aurora-primary) 45%, transparent);
+    color: var(--aurora-dark-text);
+  }
+}

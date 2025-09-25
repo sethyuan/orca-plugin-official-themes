@@ -1,0 +1,534 @@
+/**
+ * Mono Mint Theme for Orca Note
+ * Light mode: airy monochrome neutrals with a mint inflection
+ * Dark mode: deep forest monochrome with neon mint glow
+ */
+
+:root {
+  /* Light neutral base */
+  --mint-light-text: #1f2a25;
+  --mint-light-subtext1: #324137;
+  --mint-light-subtext0: #46574b;
+  --mint-light-overlay2: #5b6d60;
+  --mint-light-overlay1: #718373;
+  --mint-light-overlay0: #889989;
+  --mint-light-surface2: #a0b0a1;
+  --mint-light-surface1: #bccabf;
+  --mint-light-surface0: #d5dfd7;
+  --mint-light-base: #eef5f0;
+  --mint-light-mantle: #e5ede8;
+  --mint-light-crust: #d9e2dc;
+
+  --mint-primary: #3ecf8e;
+  --mint-emerald: #27b679;
+  --mint-teal: #2ab4a0;
+  --mint-deep: #0f766e;
+  --mint-blue: #2491d2;
+  --mint-lemon: #f4d35e;
+  --mint-coral: #ff6f59;
+
+  --orca-color-primary-5: var(--mint-primary) !important;
+  --orca-color-primary-1: color-mix(in oklab, var(--mint-primary) 15%, var(--mint-light-base));
+  --orca-color-primary-2: color-mix(in oklab, var(--mint-primary) 35%, var(--mint-light-base));
+  --orca-color-primary-3: color-mix(in oklab, var(--mint-primary) 55%, var(--mint-light-base));
+  --orca-color-primary-4: color-mix(in oklab, var(--mint-primary) 75%, var(--mint-light-base));
+  --orca-color-primary-6: color-mix(in oklab, var(--mint-primary) 85%, var(--mint-light-text));
+  --orca-color-primary-7: color-mix(in oklab, var(--mint-primary) 65%, var(--mint-light-text));
+  --orca-color-primary-8: color-mix(in oklab, var(--mint-primary) 45%, var(--mint-light-text));
+  --orca-color-primary-9: color-mix(in oklab, var(--mint-primary) 30%, var(--mint-light-text));
+
+  --orca-color-gray-0: var(--mint-light-mantle);
+  --orca-color-gray-1: var(--mint-light-crust);
+  --orca-color-gray-2: var(--mint-light-surface0);
+  --orca-color-gray-3: var(--mint-light-surface1);
+  --orca-color-gray-4: var(--mint-light-surface2);
+  --orca-color-gray-5: var(--mint-light-overlay0);
+  --orca-color-gray-6: var(--mint-light-overlay1);
+  --orca-color-gray-7: var(--mint-light-overlay2);
+  --orca-color-gray-8: var(--mint-light-subtext0);
+  --orca-color-gray-9: var(--mint-light-subtext1);
+
+  --orca-color-success-5: var(--mint-emerald);
+  --orca-color-success-1: color-mix(in oklab, var(--mint-emerald) 20%, var(--mint-light-base));
+  --orca-color-success-2: color-mix(in oklab, var(--mint-emerald) 40%, var(--mint-light-base));
+  --orca-color-success-3: color-mix(in oklab, var(--mint-emerald) 60%, var(--mint-light-base));
+  --orca-color-success-4: color-mix(in oklab, var(--mint-emerald) 80%, var(--mint-light-base));
+  --orca-color-success-6: color-mix(in oklab, var(--mint-emerald) 85%, var(--mint-light-text));
+  --orca-color-success-7: color-mix(in oklab, var(--mint-emerald) 65%, var(--mint-light-text));
+  --orca-color-success-8: color-mix(in oklab, var(--mint-emerald) 45%, var(--mint-light-text));
+  --orca-color-success-9: color-mix(in oklab, var(--mint-emerald) 30%, var(--mint-light-text));
+
+  --orca-color-warning-5: var(--mint-lemon);
+  --orca-color-warning-1: color-mix(in oklab, var(--mint-lemon) 30%, var(--mint-light-base));
+  --orca-color-warning-2: color-mix(in oklab, var(--mint-lemon) 45%, var(--mint-light-base));
+  --orca-color-warning-3: color-mix(in oklab, var(--mint-lemon) 65%, var(--mint-light-base));
+  --orca-color-warning-4: color-mix(in oklab, var(--mint-lemon) 80%, var(--mint-light-base));
+  --orca-color-warning-6: color-mix(in oklab, var(--mint-lemon) 80%, var(--mint-light-text));
+  --orca-color-warning-7: color-mix(in oklab, var(--mint-lemon) 60%, var(--mint-light-text));
+  --orca-color-warning-8: color-mix(in oklab, var(--mint-lemon) 45%, var(--mint-light-text));
+  --orca-color-warning-9: color-mix(in oklab, var(--mint-lemon) 30%, var(--mint-light-text));
+
+  --orca-color-dangerous-5: var(--mint-coral);
+  --orca-color-dangerous-1: color-mix(in oklab, var(--mint-coral) 30%, var(--mint-light-base));
+  --orca-color-dangerous-2: color-mix(in oklab, var(--mint-coral) 45%, var(--mint-light-base));
+  --orca-color-dangerous-3: color-mix(in oklab, var(--mint-coral) 60%, var(--mint-light-base));
+  --orca-color-dangerous-4: color-mix(in oklab, var(--mint-coral) 80%, var(--mint-light-base));
+  --orca-color-dangerous-6: color-mix(in oklab, var(--mint-coral) 85%, var(--mint-light-text));
+  --orca-color-dangerous-7: color-mix(in oklab, var(--mint-coral) 65%, var(--mint-light-text));
+  --orca-color-dangerous-8: color-mix(in oklab, var(--mint-coral) 45%, var(--mint-light-text));
+  --orca-color-dangerous-9: color-mix(in oklab, var(--mint-coral) 30%, var(--mint-light-text));
+
+  --orca-color-bg-1: var(--mint-light-base);
+  --orca-color-bg-2: var(--mint-light-mantle);
+  --orca-color-bg-3: var(--mint-light-crust);
+  --orca-color-bg-blue: color-mix(in oklab, var(--mint-blue) 12%, var(--mint-light-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--mint-primary) 16%, var(--mint-light-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--mint-coral) 16%, var(--mint-light-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--mint-lemon) 16%, var(--mint-light-base));
+
+  --orca-color-text-1: var(--mint-light-text);
+  --orca-color-text-2: var(--mint-light-subtext1);
+  --orca-color-text-blue: var(--mint-blue);
+  --orca-color-text-green: var(--mint-primary);
+  --orca-color-text-red: var(--mint-coral);
+  --orca-color-text-yellow: var(--mint-lemon);
+
+  --orca-color-border: var(--mint-light-surface0);
+  --orca-color-separator: var(--mint-light-surface0);
+  --orca-color-menu-highlight: color-mix(in oklab, var(--mint-primary) 12%, var(--mint-light-crust));
+  --orca-color-placeholder: var(--mint-light-overlay1);
+  --orca-color-selection: color-mix(in oklab, var(--mint-primary) 12%, var(--mint-light-base));
+  --orca-color-result-highlight: var(--orca-color-bg-yellow);
+  --orca-color-tag: var(--mint-light-surface1);
+  --orca-color-tab: var(--orca-color-primary-4);
+  --orca-color-win-scrollbar: var(--mint-light-overlay0);
+  --orca-color-scope-line: var(--mint-light-surface1);
+  --orca-color-mirror: var(--mint-light-mantle);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mint-dark-text: #def7e8;
+    --mint-dark-subtext1: #b6e3ca;
+    --mint-dark-subtext0: #88c0a6;
+    --mint-dark-overlay2: #5c9a82;
+    --mint-dark-overlay1: #46856e;
+    --mint-dark-overlay0: #3a6f59;
+    --mint-dark-surface2: #2f5c4a;
+    --mint-dark-surface1: #254c3e;
+    --mint-dark-surface0: #1d3d32;
+    --mint-dark-base: #0b1814;
+    --mint-dark-mantle: #10211b;
+    --mint-dark-crust: #162a23;
+
+    --orca-color-primary-5: var(--mint-primary) !important;
+    --orca-color-primary-1: color-mix(in oklab, var(--mint-primary) 22%, var(--mint-dark-base));
+    --orca-color-primary-2: color-mix(in oklab, var(--mint-primary) 42%, var(--mint-dark-base));
+    --orca-color-primary-3: color-mix(in oklab, var(--mint-primary) 62%, var(--mint-dark-base));
+    --orca-color-primary-4: color-mix(in oklab, var(--mint-primary) 80%, var(--mint-dark-base));
+    --orca-color-primary-6: color-mix(in oklab, var(--mint-primary) 82%, var(--mint-dark-text));
+    --orca-color-primary-7: color-mix(in oklab, var(--mint-primary) 65%, var(--mint-dark-text));
+    --orca-color-primary-8: color-mix(in oklab, var(--mint-primary) 46%, var(--mint-dark-text));
+    --orca-color-primary-9: color-mix(in oklab, var(--mint-primary) 32%, var(--mint-dark-text));
+
+    --orca-color-gray-0: var(--mint-dark-mantle);
+    --orca-color-gray-1: var(--mint-dark-crust);
+    --orca-color-gray-2: var(--mint-dark-surface0);
+    --orca-color-gray-3: var(--mint-dark-surface1);
+    --orca-color-gray-4: var(--mint-dark-surface2);
+    --orca-color-gray-5: var(--mint-dark-overlay0);
+    --orca-color-gray-6: var(--mint-dark-overlay1);
+    --orca-color-gray-7: var(--mint-dark-overlay2);
+    --orca-color-gray-8: var(--mint-dark-subtext0);
+    --orca-color-gray-9: var(--mint-dark-subtext1);
+
+    --orca-color-success-5: var(--mint-emerald);
+    --orca-color-success-1: color-mix(in oklab, var(--mint-emerald) 45%, var(--mint-dark-base));
+    --orca-color-success-2: color-mix(in oklab, var(--mint-emerald) 58%, var(--mint-dark-base));
+    --orca-color-success-3: color-mix(in oklab, var(--mint-emerald) 72%, var(--mint-dark-base));
+    --orca-color-success-4: color-mix(in oklab, var(--mint-emerald) 86%, var(--mint-dark-base));
+    --orca-color-success-6: color-mix(in oklab, var(--mint-emerald) 86%, var(--mint-dark-text));
+    --orca-color-success-7: color-mix(in oklab, var(--mint-emerald) 70%, var(--mint-dark-text));
+    --orca-color-success-8: color-mix(in oklab, var(--mint-emerald) 55%, var(--mint-dark-text));
+    --orca-color-success-9: color-mix(in oklab, var(--mint-emerald) 40%, var(--mint-dark-text));
+
+    --orca-color-warning-5: var(--mint-lemon);
+    --orca-color-warning-1: color-mix(in oklab, var(--mint-lemon) 45%, var(--mint-dark-base));
+    --orca-color-warning-2: color-mix(in oklab, var(--mint-lemon) 60%, var(--mint-dark-base));
+    --orca-color-warning-3: color-mix(in oklab, var(--mint-lemon) 70%, var(--mint-dark-base));
+    --orca-color-warning-4: color-mix(in oklab, var(--mint-lemon) 82%, var(--mint-dark-base));
+    --orca-color-warning-6: color-mix(in oklab, var(--mint-lemon) 80%, var(--mint-dark-text));
+    --orca-color-warning-7: color-mix(in oklab, var(--mint-lemon) 65%, var(--mint-dark-text));
+    --orca-color-warning-8: color-mix(in oklab, var(--mint-lemon) 50%, var(--mint-dark-text));
+    --orca-color-warning-9: color-mix(in oklab, var(--mint-lemon) 38%, var(--mint-dark-text));
+
+    --orca-color-dangerous-5: var(--mint-coral);
+    --orca-color-dangerous-1: color-mix(in oklab, var(--mint-coral) 45%, var(--mint-dark-base));
+    --orca-color-dangerous-2: color-mix(in oklab, var(--mint-coral) 60%, var(--mint-dark-base));
+    --orca-color-dangerous-3: color-mix(in oklab, var(--mint-coral) 72%, var(--mint-dark-base));
+    --orca-color-dangerous-4: color-mix(in oklab, var(--mint-coral) 85%, var(--mint-dark-base));
+    --orca-color-dangerous-6: color-mix(in oklab, var(--mint-coral) 85%, var(--mint-dark-text));
+    --orca-color-dangerous-7: color-mix(in oklab, var(--mint-coral) 68%, var(--mint-dark-text));
+    --orca-color-dangerous-8: color-mix(in oklab, var(--mint-coral) 52%, var(--mint-dark-text));
+    --orca-color-dangerous-9: color-mix(in oklab, var(--mint-coral) 36%, var(--mint-dark-text));
+
+    --orca-color-bg-1: var(--mint-dark-base);
+    --orca-color-bg-2: var(--mint-dark-mantle);
+    --orca-color-bg-3: var(--mint-dark-crust);
+    --orca-color-bg-blue: color-mix(in oklab, var(--mint-blue) 22%, var(--mint-dark-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--mint-primary) 28%, var(--mint-dark-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--mint-coral) 24%, var(--mint-dark-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--mint-lemon) 24%, var(--mint-dark-base));
+
+    --orca-color-text-1: var(--mint-dark-text);
+    --orca-color-text-2: var(--mint-dark-subtext1);
+    --orca-color-text-blue: var(--mint-blue);
+    --orca-color-text-green: var(--mint-primary);
+    --orca-color-text-red: var(--mint-coral);
+    --orca-color-text-yellow: var(--mint-lemon);
+
+    --orca-color-border: var(--mint-dark-surface0);
+    --orca-color-separator: var(--mint-dark-surface0);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--mint-primary) 22%, var(--mint-dark-crust));
+    --orca-color-placeholder: var(--mint-dark-overlay0);
+    --orca-color-selection: color-mix(in oklab, var(--mint-primary) 24%, var(--mint-dark-base));
+    --orca-color-result-highlight: var(--orca-color-bg-yellow);
+    --orca-color-tag: var(--mint-dark-surface0);
+    --orca-color-tab: var(--orca-color-primary-6);
+    --orca-color-win-scrollbar: var(--mint-dark-overlay0);
+    --orca-color-scope-line: var(--mint-dark-surface1);
+    --orca-color-mirror: var(--mint-dark-mantle);
+
+    --orca-shadow-menu: rgb(from var(--mint-dark-overlay0) r g b / 0.25) 0px 0px 0px 1px,
+      rgb(from var(--mint-dark-overlay0) r g b / 0.3) 0px 4px 10px,
+      rgb(from var(--mint-dark-overlay0) r g b / 0.35) 0px 16px 28px;
+    --orca-shadow-toolbar-list: rgb(from var(--mint-dark-overlay0) r g b / 0.22) 0px 1px 0px 1px,
+      rgb(from var(--mint-dark-overlay0) r g b / 0.28) 0px 4px 12px,
+      rgb(from var(--mint-dark-overlay0) r g b / 0.34) 0px 22px 30px;
+    --orca-shadow-findreplace: rgb(from var(--mint-dark-overlay2) r g b / 0.08) 0px 0px 0px 1px,
+      rgb(from var(--mint-dark-overlay2) r g b / 0.04) 0px 4px 8px,
+      rgb(from var(--mint-dark-overlay2) r g b / 0.12) 0px 18px 26px;
+    --orca-shadow-popup: rgb(from var(--mint-dark-overlay2) r g b / 0.12) 0px 0px 0px 1px,
+      rgb(from var(--mint-dark-overlay2) r g b / 0.08) 0px 6px 14px,
+      rgb(from var(--mint-dark-overlay2) r g b / 0.18) 0px 30px 42px;
+  }
+}
+
+body.kef-round-shell {
+  background: linear-gradient(130deg, var(--mint-light-crust), var(--mint-light-base));
+}
+
+@media (prefers-color-scheme: dark) {
+  body.kef-round-shell {
+    background: radial-gradient(circle at 10% 20%, rgba(62, 207, 142, 0.18), transparent 55%),
+      radial-gradient(circle at 85% 25%, rgba(42, 180, 160, 0.18), transparent 60%),
+      var(--mint-dark-crust);
+  }
+}
+
+.sidebar-opened .orca-headbar-sidebar-tools .orca-button,
+body.kef-round-shell #headbar .orca-button {
+  color: inherit;
+}
+
+#headbar {
+  backdrop-filter: blur(18px);
+}
+
+#sidebar {
+  --orca-color-dangerous-5: var(--mint-coral);
+  --orca-color-text-1: var(--mint-light-text);
+  --orca-color-bg-1: var(--mint-light-crust);
+  --orca-color-bg-2: var(--mint-light-mantle);
+  --orca-color-border: var(--mint-light-surface1);
+  --orca-color-text-2: var(--mint-light-subtext1);
+  --orca-color-menu-highlight: color-mix(in oklab, var(--mint-primary) 16%, var(--mint-light-crust));
+  --orca-border-general: 1px solid var(--orca-color-border);
+  --orca-shadow-menu: rgb(from var(--mint-light-overlay0) r g b / 0.08) 0px 0px 0px 1px,
+    rgb(from var(--mint-light-overlay0) r g b / 0.12) 0px 3px 8px,
+    rgb(from var(--mint-light-overlay0) r g b / 0.16) 0px 12px 20px;
+  --orca-color-win-scrollbar: var(--mint-light-overlay0);
+  --orca-color-selection: color-mix(in oklab, var(--mint-primary) 12%, var(--mint-light-crust));
+  --orca-color-placeholder: var(--mint-light-overlay2);
+}
+
+.orca-sidebar-tab-options {
+  background: color-mix(in oklab, var(--mint-light-base) 85%, white);
+  border: 1px solid var(--mint-light-surface0);
+}
+
+.orca-sidebar-tab-options .orca-segmented-item {
+  color: var(--mint-light-overlay2);
+}
+
+.orca-sidebar-tab-options .orca-segmented-item.orca-selected {
+  color: var(--mint-light-text);
+}
+
+.orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected,
+.orca-sidebar-tab-options.orca-segmented .orca-transition {
+  background: color-mix(in oklab, var(--mint-light-mantle) 90%, white);
+  box-shadow: var(--orca-shadow-segmented);
+}
+
+.orca-sidebar-create-aliased-btn.orca-button {
+  background-color: var(--mint-light-surface0);
+  color: var(--mint-light-overlay1);
+}
+
+.orca-sidebar-create-aliased-btn.orca-button:hover {
+  background-color: var(--mint-light-surface1);
+  color: var(--mint-light-text);
+}
+
+#sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+  background-color: var(--mint-light-surface1);
+  color: var(--mint-light-overlay2);
+}
+
+#sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
+  background-color: var(--mint-light-surface1);
+}
+
+#sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+  background-color: var(--mint-light-surface0);
+  color: var(--mint-light-overlay1);
+}
+
+#sidebar .orca-menu {
+  background: color-mix(in oklab, var(--mint-light-mantle) 80%, white);
+  border: 1px solid var(--mint-light-surface0);
+  box-shadow: rgb(from var(--mint-light-overlay0) r g b / 0.12) 0px 0px 0px 1px,
+    rgb(from var(--mint-light-overlay0) r g b / 0.16) 0px 2px 8px,
+    rgb(from var(--mint-light-overlay0) r g b / 0.22) 0px 10px 18px;
+}
+
+#sidebar .orca-button.solid {
+  color: var(--mint-light-base);
+}
+
+.orca-calendar .day:not(.value):hover,
+.orca-calendar .month:not(.value):hover,
+.orca-calendar .year:not(.value):hover {
+  background-color: var(--mint-light-surface2);
+  color: var(--mint-light-text);
+}
+
+.orca-calendar .value {
+  background: linear-gradient(120deg, var(--mint-primary), var(--mint-teal));
+  color: var(--mint-light-base);
+}
+
+@media (prefers-color-scheme: dark) {
+  #sidebar {
+    --orca-color-dangerous-5: var(--mint-coral);
+    --orca-color-text-1: var(--mint-dark-text);
+    --orca-color-bg-1: var(--mint-dark-mantle);
+    --orca-color-bg-2: var(--mint-dark-base);
+    --orca-color-border: var(--mint-dark-surface1);
+    --orca-color-text-2: var(--mint-dark-subtext1);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--mint-primary) 24%, var(--mint-dark-crust));
+    --orca-border-general: 1px solid var(--orca-color-border);
+    --orca-shadow-menu: rgb(from var(--mint-dark-overlay0) r g b / 0.26) 0px 0px 0px 1px,
+      rgb(from var(--mint-dark-overlay0) r g b / 0.32) 0px 4px 10px,
+      rgb(from var(--mint-dark-overlay0) r g b / 0.38) 0px 18px 30px;
+    --orca-color-win-scrollbar: var(--mint-dark-overlay0);
+    --orca-color-selection: color-mix(in oklab, var(--mint-primary) 22%, var(--mint-dark-crust));
+    --orca-color-placeholder: var(--mint-dark-overlay1);
+  }
+
+  .orca-sidebar-tab-options {
+    background: linear-gradient(135deg, rgba(62, 207, 142, 0.16), rgba(42, 180, 160, 0.08));
+    border: 1px solid var(--mint-dark-surface0);
+  }
+
+  .orca-sidebar-tab-options .orca-segmented-item {
+    color: var(--mint-dark-overlay2);
+  }
+
+  .orca-sidebar-tab-options .orca-segmented-item.orca-selected {
+    color: var(--mint-dark-text);
+  }
+
+  .orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected,
+  .orca-sidebar-tab-options.orca-segmented .orca-transition {
+    background: color-mix(in oklab, var(--mint-dark-base) 78%, black);
+    box-shadow: var(--orca-shadow-segmented);
+  }
+
+  .orca-sidebar-create-aliased-btn.orca-button {
+    background-color: var(--mint-dark-surface0);
+    color: var(--mint-dark-subtext1);
+  }
+
+  .orca-sidebar-create-aliased-btn.orca-button:hover {
+    background-color: var(--mint-dark-surface1);
+    color: var(--mint-dark-text);
+  }
+
+  #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+    background: color-mix(in oklab, var(--mint-dark-surface0) 78%, var(--mint-primary) 10%);
+    color: var(--mint-dark-overlay2);
+  }
+
+  #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
+    background: color-mix(in oklab, var(--mint-dark-surface2) 78%, var(--mint-dark-base));
+  }
+
+  #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
+    background: var(--mint-dark-surface0);
+    color: var(--mint-dark-overlay1);
+  }
+
+  #sidebar .orca-menu {
+    background: color-mix(in oklab, var(--mint-dark-mantle) 90%, var(--mint-dark-base));
+    border: 1px solid var(--mint-dark-surface0);
+    box-shadow: rgb(from var(--mint-dark-overlay0) r g b / 0.28) 0px 0px 0px 1px,
+      rgb(from var(--mint-dark-overlay0) r g b / 0.34) 0px 4px 12px,
+      rgb(from var(--mint-dark-overlay0) r g b / 0.42) 0px 18px 34px;
+  }
+
+  #sidebar .orca-button.solid {
+    color: var(--mint-dark-base);
+  }
+
+  .orca-calendar .day:not(.value):hover,
+  .orca-calendar .month:not(.value):hover,
+  .orca-calendar .year:not(.value):hover {
+    background-color: var(--mint-dark-surface2);
+    color: var(--mint-dark-text);
+  }
+
+  .orca-calendar .value {
+    background: linear-gradient(125deg, var(--mint-primary), var(--mint-teal));
+    color: var(--mint-dark-base);
+  }
+}
+
+@scope (.orca-settings > .sections) {
+  :scope {
+    background-color: var(--mint-light-surface0);
+  }
+
+  .item.selected,
+  .item:hover,
+  .plugin-item.selected,
+  .plugin-item:hover {
+    background-color: var(--mint-light-surface1);
+  }
+}
+
+@scope (.orca-settings > .views .shortcut-input) {
+  .recording {
+    background-color: var(--orca-color-primary-1);
+  }
+}
+
+.orca-settings-shortcuts-header {
+  background-color: var(--mint-light-surface1);
+}
+
+@media (prefers-color-scheme: dark) {
+  @scope (.orca-settings > .sections) {
+    :scope {
+      background-color: var(--mint-dark-surface0);
+    }
+
+    .item.selected,
+    .item:hover,
+    .plugin-item.selected,
+    .plugin-item:hover {
+      background-color: var(--mint-dark-surface1);
+    }
+  }
+
+  @scope (.orca-settings > .views) {
+
+    .header-row,
+    .header-row.row:hover {
+      background-color: var(--mint-dark-surface0);
+    }
+  }
+
+  @scope (.orca-settings > .views .shortcut-input) {
+    .recording {
+      background-color: var(--orca-color-primary-7);
+    }
+  }
+
+  .orca-settings-shortcuts-header {
+    background-color: var(--mint-dark-surface1);
+  }
+}
+
+.orca-button.dangerous {
+  background: var(--mint-coral);
+  color: var(--mint-light-base);
+}
+
+.orca-button.dangerous:active {
+  background: color-mix(in oklab, var(--mint-coral) 72%, black);
+}
+
+.orca-button.soft {
+  background: var(--mint-light-surface1);
+  color: var(--mint-light-text);
+}
+
+.orca-button.soft:active {
+  background: var(--mint-light-surface2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .orca-button.dangerous {
+    background: var(--mint-coral);
+    color: var(--mint-dark-base);
+  }
+
+  .orca-button.dangerous:active {
+    background: color-mix(in oklab, var(--mint-coral) 72%, white);
+  }
+
+  .orca-button.soft {
+    background: color-mix(in oklab, var(--mint-dark-surface1) 86%, var(--mint-dark-surface0));
+    color: var(--mint-dark-text);
+  }
+
+  .orca-button.soft:active {
+    background: var(--mint-dark-surface2);
+  }
+
+  .orca-segmented {
+    background-color: var(--orca-color-gray-3);
+  }
+
+  .orca-select-button-selection {
+    background: var(--orca-color-primary-3);
+  }
+
+  .orca-query-calendar-month-view-active {
+    background: var(--orca-color-primary-1);
+  }
+}
+
+.orca-query-list-block {
+  --orca-color-mirror: var(--mint-light-crust);
+}
+
+@media (prefers-color-scheme: dark) {
+  .orca-query-list-block {
+    --orca-color-mirror: var(--mint-dark-crust);
+  }
+}
+
+::selection {
+  background: color-mix(in oklab, var(--mint-primary) 38%, transparent);
+  color: var(--mint-light-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background: color-mix(in oklab, var(--mint-primary) 30%, transparent);
+    color: var(--mint-dark-text);
+  }
+}

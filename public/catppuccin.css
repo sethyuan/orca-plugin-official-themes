@@ -235,6 +235,30 @@
 
 body.kef-round-shell {
   background-color: var(--catppuccin-latte-crust);
+  background: linear-gradient(135deg,
+      color-mix(in oklab,
+        var(--catppuccin-latte-mauve) 16%,
+        var(--catppuccin-latte-crust)),
+      color-mix(in oklab,
+        var(--catppuccin-latte-blue) 12%,
+        var(--catppuccin-latte-base)));
+}
+
+@media (prefers-color-scheme: dark) {
+  body.kef-round-shell {
+    background-color: var(--catppuccin-macchiato-crust);
+    background: radial-gradient(circle at 15% 25%,
+        color-mix(in oklab,
+          var(--catppuccin-macchiato-mauve) 30%,
+          transparent),
+        transparent 58%),
+      radial-gradient(circle at 85% 20%,
+        color-mix(in oklab,
+          var(--catppuccin-macchiato-blue) 28%,
+          transparent),
+        transparent 60%),
+      var(--catppuccin-macchiato-crust);
+  }
 }
 
 /* Headbar Specific Overrides for Both Light and Dark Modes */
@@ -285,12 +309,12 @@ body.kef-round-shell #headbar .orca-button {
 }
 
 .orca-sidebar-create-aliased-btn.orca-button {
-  background-color: var(--catppuccin-latte-surface0);
+  background-color: var(--catppuccin-latte-base);
   color: var(--catppuccin-latte-subtext1);
 }
 
 .orca-sidebar-create-aliased-btn.orca-button:hover {
-  background-color: var(--catppuccin-latte-surface1);
+  background-color: var(--catppuccin-latte-mantle);
   color: var(--catppuccin-latte-text);
 }
 
@@ -335,10 +359,6 @@ body.kef-round-shell #headbar .orca-button {
 }
 
 @media (prefers-color-scheme: dark) {
-  body.kef-round-shell {
-    background-color: var(--catppuccin-macchiato-crust);
-  }
-
   #sidebar {
     /* Dark mode sidebar - Catppuccin Macchiato inspired */
     --orca-color-dangerous-5: var(--catppuccin-macchiato-red);
@@ -549,10 +569,7 @@ body.kef-round-shell #headbar .orca-button {
   .orca-select-button-selection {
     background-color: var(--orca-color-primary-3);
   }
-}
 
-/* Query calendar view */
-@media (prefers-color-scheme: dark) {
   .orca-query-calendar-month-view-active {
     background: var(--orca-color-primary-1);
   }
