@@ -282,7 +282,7 @@ body.kef-round-shell #headbar .orca-button {
 }
 
 #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-  background-color: var(--aurora-light-surface0);
+  background-color: var(--aurora-light-surface1);
   color: var(--aurora-light-overlay2);
 }
 
@@ -367,7 +367,7 @@ body.kef-round-shell #headbar .orca-button {
   }
 
   #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-    background: color-mix(in oklab, var(--aurora-dark-surface0) 70%, var(--aurora-indigo) 10%);
+    background: color-mix(in oklab, var(--aurora-dark-surface1) 70%, var(--aurora-indigo) 10%);
     color: var(--aurora-dark-overlay2);
   }
 

@@ -295,7 +295,7 @@ body.kef-round-shell #headbar .orca-button {
 }
 
 #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-  background-color: var(--garden-light-surface0);
+  background-color: var(--garden-light-surface1);
   color: var(--garden-light-overlay2);
 }
 
@@ -384,7 +384,7 @@ body.kef-round-shell #headbar .orca-button {
   }
 
   #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-    background-color: var(--garden-dark-surface0);
+    background-color: var(--garden-dark-surface1);
     color: var(--garden-dark-overlay2);
   }
 

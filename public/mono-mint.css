@@ -367,7 +367,7 @@ body.kef-round-shell #headbar .orca-button {
   }
 
   #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-    background: color-mix(in oklab, var(--mint-dark-surface0) 78%, var(--mint-primary) 10%);
+    background: color-mix(in oklab, var(--mint-dark-surface1) 78%, var(--mint-primary) 10%);
     color: var(--mint-dark-overlay2);
   }
 

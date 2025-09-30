@@ -323,7 +323,7 @@ body.kef-round-shell #headbar .orca-button {
 
 /* Lists icon background color override for light mode */
 #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-  background-color: var(--catppuccin-latte-surface0);
+  background-color: var(--catppuccin-latte-surface1);
   color: var(--catppuccin-latte-overlay2);
 }
 
@@ -414,7 +414,7 @@ body.kef-round-shell #headbar .orca-button {
 
   /* Lists icon background color override for dark mode */
   #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-    background-color: var(--catppuccin-macchiato-surface0);
+    background-color: var(--catppuccin-macchiato-surface1);
     color: var(--catppuccin-macchiato-overlay2);
   }
 

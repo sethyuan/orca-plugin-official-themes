@@ -19,14 +19,14 @@ body {
 }
 
 #main {
-  border-radius: var(--orca-radius-2xl);
-  margin: var(--orca-height-headbar) var(--orca-spacing-md) var(--orca-spacing-md) 0;
+  border-radius: var(--orca-radius-xl);
+  margin: var(--orca-height-headbar) 7px 7px 0;
   box-shadow: var(--orca-shadow-round-shell);
 }
 
 .sidebar-closed #main,
 .sidebar-closing #main {
-  margin-left: var(--orca-spacing-md);
+  margin-left: 7px;
 }
 
 #main::before {
