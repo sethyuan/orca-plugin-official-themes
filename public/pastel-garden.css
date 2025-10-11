@@ -89,7 +89,7 @@
   --orca-color-bg-yellow: color-mix(in oklab, var(--garden-petal-peach) 18%, var(--garden-light-base));
 
   --orca-color-text-1: var(--garden-light-text);
-  --orca-color-text-2: var(--garden-light-subtext1);
+  --orca-color-text-2: var(--garden-light-overlay2);
   --orca-color-text-blue: var(--garden-petal-sky);
   --orca-color-text-green: color-mix(in oklab, var(--garden-petal-mint) 70%, var(--garden-light-text));
   --orca-color-text-red: var(--garden-petal-coral);
@@ -194,7 +194,7 @@
     --orca-color-bg-yellow: color-mix(in oklab, var(--garden-twilight-peach) 24%, var(--garden-dark-base));
 
     --orca-color-text-1: var(--garden-dark-text);
-    --orca-color-text-2: var(--garden-dark-subtext1);
+    --orca-color-text-2: var(--garden-dark-overlay2);
     --orca-color-text-blue: var(--garden-twilight-sky);
     --orca-color-text-green: var(--garden-twilight-mint);
     --orca-color-text-red: var(--garden-twilight-coral);
@@ -250,7 +250,7 @@ body.kef-round-shell #headbar .orca-button {
   --orca-color-bg-1: var(--garden-light-crust);
   --orca-color-bg-2: var(--garden-light-mantle);
   --orca-color-border: var(--garden-light-surface1);
-  --orca-color-text-2: var(--garden-light-subtext1);
+  --orca-color-text-2: var(--garden-light-overlay2);
   --orca-color-menu-highlight: color-mix(in oklab, var(--garden-petal-lavender) 20%, var(--garden-light-crust));
   --orca-border-general: 1px solid var(--orca-color-border);
   --orca-shadow-menu: rgb(from var(--garden-light-overlay0) r g b / 0.08) 0px 0px 0px 1px,
@@ -339,7 +339,7 @@ body.kef-round-shell #headbar .orca-button {
     --orca-color-bg-1: var(--garden-dark-mantle);
     --orca-color-bg-2: var(--garden-dark-base);
     --orca-color-border: var(--garden-dark-surface1);
-    --orca-color-text-2: var(--garden-dark-subtext1);
+    --orca-color-text-2: var(--garden-dark-overlay2);
     --orca-color-menu-highlight: color-mix(in oklab, var(--garden-twilight-lavender) 28%, var(--garden-dark-crust));
     --orca-border-general: 1px solid var(--orca-color-border);
     --orca-shadow-menu: rgb(from var(--garden-dark-base) r g b / 0.22) 0px 0px 0px 1px,

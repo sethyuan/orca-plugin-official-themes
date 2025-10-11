@@ -97,7 +97,7 @@
   --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-latte-yellow) 20%, var(--catppuccin-latte-base));
 
   --orca-color-text-1: var(--catppuccin-latte-text);
-  --orca-color-text-2: var(--catppuccin-latte-subtext1);
+  --orca-color-text-2: var(--catppuccin-latte-overlay2);
   --orca-color-text-blue: var(--catppuccin-latte-blue);
   --orca-color-text-green: var(--catppuccin-latte-green);
   --orca-color-text-red: var(--catppuccin-latte-red);
@@ -208,7 +208,7 @@
     --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 25%, var(--catppuccin-macchiato-base));
 
     --orca-color-text-1: var(--catppuccin-macchiato-text);
-    --orca-color-text-2: var(--catppuccin-macchiato-subtext1);
+    --orca-color-text-2: var(--catppuccin-macchiato-overlay2);
     --orca-color-text-blue: var(--catppuccin-macchiato-blue);
     --orca-color-text-green: var(--catppuccin-macchiato-green);
     --orca-color-text-red: var(--catppuccin-macchiato-red);
@@ -278,7 +278,7 @@ body.kef-round-shell #headbar .orca-button {
   --orca-color-bg-1: var(--catppuccin-latte-crust);
   --orca-color-bg-2: var(--catppuccin-latte-mantle);
   --orca-color-border: var(--catppuccin-latte-surface1);
-  --orca-color-text-2: var(--catppuccin-latte-subtext1);
+  --orca-color-text-2: var(--catppuccin-latte-overlay2);
   --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-latte-mauve) 20%, var(--catppuccin-latte-crust));
   --orca-border-general: 1px solid var(--orca-color-border);
   --orca-shadow-menu: rgb(from var(--catppuccin-latte-overlay0) r g b / 0.08) 0px 0px 0px 1px, rgb(from var(--catppuccin-latte-overlay0) r g b / 0.12) 0px 2px 4px, rgb(from var(--catppuccin-latte-overlay0) r g b / 0.16) 0px 8px 16px;
@@ -369,7 +369,7 @@ body.kef-round-shell #headbar .orca-button {
     --orca-color-bg-1: var(--catppuccin-macchiato-mantle);
     --orca-color-bg-2: var(--catppuccin-macchiato-base);
     --orca-color-border: var(--catppuccin-macchiato-surface1);
-    --orca-color-text-2: var(--catppuccin-macchiato-subtext1);
+    --orca-color-text-2: var(--catppuccin-macchiato-overlay2);
     --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 25%, var(--catppuccin-macchiato-crust));
     --orca-border-general: 1px solid var(--orca-color-border);
     --orca-shadow-menu: rgb(from var(--catppuccin-macchiato-base) r g b / 0.2) 0px 0px 0px 1px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.25) 0px 2px 4px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.35) 0px 8px 16px;
