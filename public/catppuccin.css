@@ -459,6 +459,10 @@ body.kef-round-shell #headbar .orca-button {
     background-color: var(--catppuccin-latte-surface0);
   }
 
+  .title {
+    background-color: var(--catppuccin-latte-surface0);
+  }
+
   .item.selected,
   .item:hover {
     background-color: var(--catppuccin-latte-surface1);
@@ -484,6 +488,10 @@ body.kef-round-shell #headbar .orca-button {
 @media (prefers-color-scheme: dark) {
   @scope (.orca-settings > .sections) {
     :scope {
+      background-color: var(--catppuccin-macchiato-surface0);
+    }
+
+    .title {
       background-color: var(--catppuccin-macchiato-surface0);
     }
 

@@ -405,6 +405,10 @@ body.kef-round-shell #headbar .orca-button {
     background-color: var(--sakura-light-surface0);
   }
 
+  .title {
+    background-color: var(--sakura-light-surface0);
+  }
+
   .item.selected,
   .item:hover,
   .plugin-item.selected,
@@ -427,6 +431,10 @@ body.kef-round-shell #headbar .orca-button {
 @media (prefers-color-scheme: dark) {
   @scope (.orca-settings > .sections) {
     :scope {
+      background-color: var(--sakura-dark-surface0);
+    }
+
+    .title {
       background-color: var(--sakura-dark-surface0);
     }
 
