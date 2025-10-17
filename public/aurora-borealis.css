@@ -272,7 +272,7 @@ body.kef-round-shell #headbar .orca-button {
 }
 
 .orca-sidebar-create-aliased-btn.orca-button {
-  background-color: var(--aurora-light-surface0);
+  background-color: var(--aurora-light-base);
   color: var(--aurora-light-subtext1);
 }
 

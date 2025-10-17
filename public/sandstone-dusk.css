@@ -266,8 +266,8 @@ body.kef-round-shell #headbar .orca-button {
 }
 
 .orca-sidebar-create-aliased-btn.orca-button {
-  background-color: var(--sand-light-surface0);
-  color: var(--sand-light-overlay1);
+  background-color: var(--sand-light-base);
+  color: var(--sand-light-subtext1);
 }
 
 .orca-sidebar-create-aliased-btn.orca-button:hover {
