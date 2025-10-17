@@ -319,6 +319,26 @@ body.kef-round-shell #headbar .orca-button {
   color: var(--mint-light-base);
 }
 
+.orca-calendar .weekend:not(.value, .outside) {
+  color: var(--orca-color-gray-8);
+}
+
+.orca-calendar .week {
+  color: var(--orca-color-gray-4);
+}
+
+.orca-calendar .outside {
+  color: var(--orca-color-gray-5);
+}
+
+.orca-calendar .journal-dot {
+  background-color: var(--orca-color-gray-4);
+}
+
+.orca-calendar .has-remindings {
+  background-color: var(--orca-color-primary-5);
+}
+
 @media (prefers-color-scheme: dark) {
   #sidebar {
     --orca-color-dangerous-5: var(--mint-coral);
