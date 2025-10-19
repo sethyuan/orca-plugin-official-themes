@@ -21,7 +21,7 @@
   --aurora-light-crust: #d4e0f0;
 
   /* Accent ribbon hues */
-  --aurora-primary: #38f9d7;
+  --aurora-primary: #33e6c5;
   --aurora-teal: #22d3ee;
   --aurora-indigo: #6366f1;
   --aurora-violet: #8b5cf6;
@@ -83,10 +83,10 @@
   --orca-color-bg-1: var(--aurora-light-base);
   --orca-color-bg-2: var(--aurora-light-mantle);
   --orca-color-bg-3: var(--aurora-light-crust);
-  --orca-color-bg-blue: color-mix(in oklab, var(--aurora-teal) 18%, var(--aurora-light-base));
-  --orca-color-bg-green: color-mix(in oklab, var(--aurora-primary) 18%, var(--aurora-light-base));
-  --orca-color-bg-red: color-mix(in oklab, var(--aurora-rose) 18%, var(--aurora-light-base));
-  --orca-color-bg-yellow: color-mix(in oklab, var(--aurora-gold) 18%, var(--aurora-light-base));
+  --orca-color-bg-blue: color-mix(in oklab, var(--aurora-teal) 30%, var(--aurora-light-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--aurora-primary) 32%, var(--aurora-light-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--aurora-rose) 22%, var(--aurora-light-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--aurora-gold) 36%, var(--aurora-light-base));
 
   --orca-color-text-1: var(--aurora-light-text);
   --orca-color-text-2: var(--aurora-light-overlay2);
@@ -178,10 +178,10 @@
     --orca-color-bg-1: var(--aurora-dark-base);
     --orca-color-bg-2: var(--aurora-dark-mantle);
     --orca-color-bg-3: var(--aurora-dark-crust);
-    --orca-color-bg-blue: color-mix(in oklab, var(--aurora-teal) 28%, var(--aurora-dark-base));
-    --orca-color-bg-green: color-mix(in oklab, var(--aurora-primary) 28%, var(--aurora-dark-base));
-    --orca-color-bg-red: color-mix(in oklab, var(--aurora-rose) 28%, var(--aurora-dark-base));
-    --orca-color-bg-yellow: color-mix(in oklab, var(--aurora-gold) 28%, var(--aurora-dark-base));
+    --orca-color-bg-blue: color-mix(in oklab, var(--aurora-teal) 60%, var(--aurora-dark-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--aurora-primary) 62%, var(--aurora-dark-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--aurora-rose) 60%, var(--aurora-dark-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--aurora-gold) 60%, var(--aurora-dark-base));
 
     --orca-color-text-1: var(--aurora-dark-text);
     --orca-color-text-2: var(--aurora-dark-overlay2);

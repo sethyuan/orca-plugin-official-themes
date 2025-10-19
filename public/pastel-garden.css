@@ -83,10 +83,10 @@
   --orca-color-bg-1: var(--garden-light-base);
   --orca-color-bg-2: var(--garden-light-mantle);
   --orca-color-bg-3: var(--garden-light-crust);
-  --orca-color-bg-blue: color-mix(in oklab, var(--garden-petal-sky) 18%, var(--garden-light-base));
-  --orca-color-bg-green: color-mix(in oklab, var(--garden-petal-mint) 18%, var(--garden-light-base));
-  --orca-color-bg-red: color-mix(in oklab, var(--garden-petal-coral) 18%, var(--garden-light-base));
-  --orca-color-bg-yellow: color-mix(in oklab, var(--garden-petal-peach) 18%, var(--garden-light-base));
+  --orca-color-bg-blue: color-mix(in oklab, var(--garden-petal-sky) 30%, var(--garden-light-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--garden-petal-mint) 32%, var(--garden-light-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--garden-petal-coral) 22%, var(--garden-light-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--garden-petal-peach) 36%, var(--garden-light-base));
 
   --orca-color-text-1: var(--garden-light-text);
   --orca-color-text-2: var(--garden-light-overlay2);
@@ -188,10 +188,10 @@
     --orca-color-bg-1: var(--garden-dark-base);
     --orca-color-bg-2: var(--garden-dark-mantle);
     --orca-color-bg-3: var(--garden-dark-crust);
-    --orca-color-bg-blue: color-mix(in oklab, var(--garden-twilight-sky) 24%, var(--garden-dark-base));
-    --orca-color-bg-green: color-mix(in oklab, var(--garden-twilight-mint) 24%, var(--garden-dark-base));
-    --orca-color-bg-red: color-mix(in oklab, var(--garden-twilight-coral) 24%, var(--garden-dark-base));
-    --orca-color-bg-yellow: color-mix(in oklab, var(--garden-twilight-peach) 24%, var(--garden-dark-base));
+    --orca-color-bg-blue: color-mix(in oklab, var(--garden-twilight-sky) 60%, var(--garden-dark-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--garden-twilight-mint) 62%, var(--garden-dark-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--garden-twilight-coral) 60%, var(--garden-dark-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--garden-twilight-peach) 60%, var(--garden-dark-base));
 
     --orca-color-text-1: var(--garden-dark-text);
     --orca-color-text-2: var(--garden-dark-overlay2);

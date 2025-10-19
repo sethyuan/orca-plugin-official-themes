@@ -91,10 +91,10 @@
   --orca-color-bg-1: var(--catppuccin-latte-base);
   --orca-color-bg-2: var(--catppuccin-latte-mantle);
   --orca-color-bg-3: var(--catppuccin-latte-crust);
-  --orca-color-bg-blue: color-mix(in oklab, var(--catppuccin-latte-blue) 20%, var(--catppuccin-latte-base));
-  --orca-color-bg-green: color-mix(in oklab, var(--catppuccin-latte-green) 20%, var(--catppuccin-latte-base));
-  --orca-color-bg-red: color-mix(in oklab, var(--catppuccin-latte-red) 20%, var(--catppuccin-latte-base));
-  --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-latte-yellow) 20%, var(--catppuccin-latte-base));
+  --orca-color-bg-blue: color-mix(in oklab, var(--catppuccin-latte-blue) 30%, var(--catppuccin-latte-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--catppuccin-latte-green) 32%, var(--catppuccin-latte-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--catppuccin-latte-red) 22%, var(--catppuccin-latte-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-latte-yellow) 36%, var(--catppuccin-latte-base));
 
   --orca-color-text-1: var(--catppuccin-latte-text);
   --orca-color-text-2: var(--catppuccin-latte-overlay2);
@@ -202,10 +202,10 @@
     --orca-color-bg-1: var(--catppuccin-macchiato-base);
     --orca-color-bg-2: var(--catppuccin-macchiato-mantle);
     --orca-color-bg-3: var(--catppuccin-macchiato-crust);
-    --orca-color-bg-blue: color-mix(in oklab, var(--catppuccin-macchiato-blue) 25%, var(--catppuccin-macchiato-base));
-    --orca-color-bg-green: color-mix(in oklab, var(--catppuccin-macchiato-green) 25%, var(--catppuccin-macchiato-base));
-    --orca-color-bg-red: color-mix(in oklab, var(--catppuccin-macchiato-red) 25%, var(--catppuccin-macchiato-base));
-    --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 25%, var(--catppuccin-macchiato-base));
+    --orca-color-bg-blue: color-mix(in oklab, var(--catppuccin-macchiato-blue) 60%, var(--catppuccin-macchiato-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--catppuccin-macchiato-green) 62%, var(--catppuccin-macchiato-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--catppuccin-macchiato-red) 60%, var(--catppuccin-macchiato-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 60%, var(--catppuccin-macchiato-base));
 
     --orca-color-text-1: var(--catppuccin-macchiato-text);
     --orca-color-text-2: var(--catppuccin-macchiato-overlay2);

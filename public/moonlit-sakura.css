@@ -80,10 +80,10 @@
   --orca-color-bg-1: var(--sakura-light-base);
   --orca-color-bg-2: var(--sakura-light-mantle);
   --orca-color-bg-3: var(--sakura-light-crust);
-  --orca-color-bg-blue: color-mix(in oklab, var(--sakura-indigo) 16%, var(--sakura-light-base));
-  --orca-color-bg-green: color-mix(in oklab, var(--sakura-mint) 18%, var(--sakura-light-base));
-  --orca-color-bg-red: color-mix(in oklab, var(--sakura-rose) 18%, var(--sakura-light-base));
-  --orca-color-bg-yellow: color-mix(in oklab, var(--sakura-amber) 18%, var(--sakura-light-base));
+  --orca-color-bg-blue: color-mix(in oklab, var(--sakura-indigo) 30%, var(--sakura-light-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--sakura-mint) 32%, var(--sakura-light-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--sakura-rose) 22%, var(--sakura-light-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--sakura-amber) 36%, var(--sakura-light-base));
 
   --orca-color-text-1: var(--sakura-light-text);
   --orca-color-text-2: var(--sakura-light-overlay2);
@@ -174,10 +174,10 @@
     --orca-color-bg-1: var(--sakura-dark-base);
     --orca-color-bg-2: var(--sakura-dark-mantle);
     --orca-color-bg-3: var(--sakura-dark-crust);
-    --orca-color-bg-blue: color-mix(in oklab, var(--sakura-indigo) 28%, var(--sakura-dark-base));
-    --orca-color-bg-green: color-mix(in oklab, var(--sakura-mint) 24%, var(--sakura-dark-base));
-    --orca-color-bg-red: color-mix(in oklab, var(--sakura-rose) 28%, var(--sakura-dark-base));
-    --orca-color-bg-yellow: color-mix(in oklab, var(--sakura-amber) 24%, var(--sakura-dark-base));
+    --orca-color-bg-blue: color-mix(in oklab, var(--sakura-indigo) 60%, var(--sakura-dark-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--sakura-mint) 62%, var(--sakura-dark-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--sakura-rose) 60%, var(--sakura-dark-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--sakura-amber) 60%, var(--sakura-dark-base));
 
     --orca-color-text-1: var(--sakura-dark-text);
     --orca-color-text-2: var(--sakura-dark-overlay2);

@@ -81,10 +81,10 @@
   --orca-color-bg-1: var(--mint-light-base);
   --orca-color-bg-2: var(--mint-light-mantle);
   --orca-color-bg-3: var(--mint-light-crust);
-  --orca-color-bg-blue: color-mix(in oklab, var(--mint-blue) 12%, var(--mint-light-base));
-  --orca-color-bg-green: color-mix(in oklab, var(--mint-primary) 16%, var(--mint-light-base));
-  --orca-color-bg-red: color-mix(in oklab, var(--mint-coral) 16%, var(--mint-light-base));
-  --orca-color-bg-yellow: color-mix(in oklab, var(--mint-lemon) 16%, var(--mint-light-base));
+  --orca-color-bg-blue: color-mix(in oklab, var(--mint-blue) 30%, var(--mint-light-base));
+  --orca-color-bg-green: color-mix(in oklab, var(--mint-primary) 32%, var(--mint-light-base));
+  --orca-color-bg-red: color-mix(in oklab, var(--mint-coral) 22%, var(--mint-light-base));
+  --orca-color-bg-yellow: color-mix(in oklab, var(--mint-lemon) 36%, var(--mint-light-base));
 
   --orca-color-text-1: var(--mint-light-text);
   --orca-color-text-2: var(--mint-light-overlay2);
@@ -175,10 +175,10 @@
     --orca-color-bg-1: var(--mint-dark-base);
     --orca-color-bg-2: var(--mint-dark-mantle);
     --orca-color-bg-3: var(--mint-dark-crust);
-    --orca-color-bg-blue: color-mix(in oklab, var(--mint-blue) 22%, var(--mint-dark-base));
-    --orca-color-bg-green: color-mix(in oklab, var(--mint-primary) 28%, var(--mint-dark-base));
-    --orca-color-bg-red: color-mix(in oklab, var(--mint-coral) 24%, var(--mint-dark-base));
-    --orca-color-bg-yellow: color-mix(in oklab, var(--mint-lemon) 24%, var(--mint-dark-base));
+    --orca-color-bg-blue: color-mix(in oklab, var(--mint-blue) 60%, var(--mint-dark-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--mint-primary) 62%, var(--mint-dark-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--mint-coral) 60%, var(--mint-dark-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--mint-lemon) 60%, var(--mint-dark-base));
 
     --orca-color-text-1: var(--mint-dark-text);
     --orca-color-text-2: var(--mint-dark-overlay2);
