@@ -538,6 +538,10 @@ body.kef-round-shell #headbar .orca-button {
     background: var(--orca-color-primary-3);
   }
 
+  .orca-query-table-cell:not(.orca-table-cell-pinned, .orca-query-table-cell-stats) :not(.orca-select-button-multi)>.orca-select-button-text:not(.orca-select-button-colored, :empty) {
+    background-color: var(--orca-color-primary-3);
+  }
+
   .orca-query-calendar-month-view-active {
     background: var(--orca-color-primary-1);
   }
