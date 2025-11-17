@@ -311,14 +311,14 @@ body.kef-round-shell #headbar .orca-button {
   box-shadow: var(--orca-shadow-segmented);
 }
 
-.orca-sidebar-create-aliased-btn.orca-button {
+#sidebar .orca-sidebar-create-aliased-btn.orca-button {
   background-color: var(--catppuccin-latte-base);
-  color: var(--catppuccin-latte-subtext1);
+  color: var(--catppuccin-latte-subtext1) !important;
 }
 
-.orca-sidebar-create-aliased-btn.orca-button:hover {
+#sidebar.orca-sidebar-create-aliased-btn.orca-button:hover {
   background-color: var(--catppuccin-latte-mantle);
-  color: var(--catppuccin-latte-text);
+  color: var(--catppuccin-latte-text) !important;
 }
 
 /* Lists icon background color override for light mode */
@@ -422,14 +422,14 @@ body.kef-round-shell #headbar .orca-button {
     box-shadow: var(--orca-shadow-segmented);
   }
 
-  .orca-sidebar-create-aliased-btn.orca-button {
+  #sidebar .orca-sidebar-create-aliased-btn.orca-button {
     background-color: var(--catppuccin-macchiato-surface0);
-    color: var(--catppuccin-macchiato-subtext1);
+    color: var(--catppuccin-macchiato-subtext1) !important;
   }
 
-  .orca-sidebar-create-aliased-btn.orca-button:hover {
+  #sidebar .orca-sidebar-create-aliased-btn.orca-button:hover {
     background-color: var(--catppuccin-macchiato-surface1);
-    color: var(--catppuccin-macchiato-text);
+    color: var(--catppuccin-macchiato-text) !important;
   }
 
   /* Lists icon background color override for dark mode */

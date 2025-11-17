@@ -266,14 +266,14 @@ body.kef-round-shell #headbar .orca-button {
   box-shadow: var(--orca-shadow-segmented);
 }
 
-.orca-sidebar-create-aliased-btn.orca-button {
+#sidebar .orca-sidebar-create-aliased-btn.orca-button {
   background-color: var(--sakura-light-base);
-  color: var(--sakura-light-subtext1);
+  color: var(--sakura-light-subtext1) !important;
 }
 
-.orca-sidebar-create-aliased-btn.orca-button:hover {
+#sidebar .orca-sidebar-create-aliased-btn.orca-button:hover {
   background-color: var(--sakura-light-surface1);
-  color: var(--sakura-light-text);
+  color: var(--sakura-light-text) !important;
 }
 
 #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
@@ -371,14 +371,14 @@ body.kef-round-shell #headbar .orca-button {
     box-shadow: var(--orca-shadow-segmented);
   }
 
-  .orca-sidebar-create-aliased-btn.orca-button {
+  #sidebar .orca-sidebar-create-aliased-btn.orca-button {
     background-color: var(--sakura-dark-surface0);
-    color: var(--sakura-dark-subtext1);
+    color: var(--sakura-dark-subtext1) !important;
   }
 
-  .orca-sidebar-create-aliased-btn.orca-button:hover {
+  #sidebar .orca-sidebar-create-aliased-btn.orca-button:hover {
     background-color: var(--sakura-dark-surface1);
-    color: var(--sakura-dark-text);
+    color: var(--sakura-dark-text) !important;
   }
 
   #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
