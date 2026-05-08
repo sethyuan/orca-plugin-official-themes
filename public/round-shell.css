@@ -6,22 +6,28 @@
   --orca-shadow-round-shell: rgba(15, 15, 15, .04) 0px 0px 5px;
 }
 
-body {
+body:not(.orca-vibrant) {
   background-color: var(--orca-color-gray-8);
-}
 
-#headbar .orca-button {
-  color: var(--orca-color-gray-3);
-}
+  #headbar .orca-button {
+    color: var(--orca-color-gray-3);
+  }
 
-#sidebar {
-  background-color: transparent;
+  #sidebar {
+    background-color: transparent;
+  }
 }
 
 #main {
   border-radius: var(--orca-radius-xl);
   margin: var(--orca-height-headbar) 7px 7px 0;
   box-shadow: var(--orca-shadow-round-shell);
+}
+
+body.orca-vibrant {
+  #main {
+    box-shadow: var(--orca-shadow-findreplace);
+  }
 }
 
 .sidebar-closed #main,
