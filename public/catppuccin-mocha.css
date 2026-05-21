@@ -1,7 +1,7 @@
 /**
- * Catppuccin Theme for Orca Note
+ * Catppuccin Mocha Theme for Orca Note
  * Light mode: Catppuccin Latte
- * Dark mode: Catppuccin Macchiato
+ * Dark mode: Catppuccin Mocha
  *
  * Based on: https://github.com/catppuccin/catppuccin
  */
@@ -116,115 +116,115 @@
   --orca-color-mirror: var(--catppuccin-latte-mantle);
 }
 
-/* Catppuccin Macchiato Colors for Dark Mode */
+/* Catppuccin Mocha Colors for Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
     /* Base colors */
-    --catppuccin-macchiato-rosewater: #f4dbd6;
-    --catppuccin-macchiato-flamingo: #f0c6c6;
-    --catppuccin-macchiato-pink: #f5bde6;
-    --catppuccin-macchiato-mauve: #c6a0f6;
-    --catppuccin-macchiato-red: #ed8796;
-    --catppuccin-macchiato-maroon: #ee99a0;
-    --catppuccin-macchiato-peach: #f5a97f;
-    --catppuccin-macchiato-yellow: #eed49f;
-    --catppuccin-macchiato-green: #a6da95;
-    --catppuccin-macchiato-teal: #8bd5ca;
-    --catppuccin-macchiato-sky: #91d7e3;
-    --catppuccin-macchiato-sapphire: #7dc4e4;
-    --catppuccin-macchiato-blue: #8aadf4;
-    --catppuccin-macchiato-lavender: #b7bdf8;
-    --catppuccin-macchiato-text: #cad3f5;
-    --catppuccin-macchiato-subtext1: #b8c0e0;
-    --catppuccin-macchiato-subtext0: #a5adcb;
-    --catppuccin-macchiato-overlay2: #939ab7;
-    --catppuccin-macchiato-overlay1: #8087a2;
-    --catppuccin-macchiato-overlay0: #6e738d;
-    --catppuccin-macchiato-surface2: #5b6078;
-    --catppuccin-macchiato-surface1: #494d64;
-    --catppuccin-macchiato-surface0: #363a4f;
-    --catppuccin-macchiato-base: #24273a;
-    --catppuccin-macchiato-mantle: #1e2030;
-    --catppuccin-macchiato-crust: #181926;
+    --catppuccin-mocha-rosewater: #f5e0dc;
+    --catppuccin-mocha-flamingo: #f2cdcd;
+    --catppuccin-mocha-pink: #f5c2e7;
+    --catppuccin-mocha-mauve: #cba6f7;
+    --catppuccin-mocha-red: #eba0ac;
+    --catppuccin-mocha-maroon: #e8a2af;
+    --catppuccin-mocha-peach: #f5c2a7;
+    --catppuccin-mocha-yellow: #f5e0b4;
+    --catppuccin-mocha-green: #a6e3a1;
+    --catppuccin-mocha-teal: #94e2d5;
+    --catppuccin-mocha-sky: #89dceb;
+    --catppuccin-mocha-sapphire: #74c7ec;
+    --catppuccin-mocha-blue: #89b4fa;
+    --catppuccin-mocha-lavender: #b4befe;
+    --catppuccin-mocha-text: #cdd6f4;
+    --catppuccin-mocha-subtext1: #bac2de;
+    --catppuccin-mocha-subtext0: #a6adc8;
+    --catppuccin-mocha-overlay2: #9399b2;
+    --catppuccin-mocha-overlay1: #7f849c;
+    --catppuccin-mocha-overlay0: #6c7086;
+    --catppuccin-mocha-surface2: #585b70;
+    --catppuccin-mocha-surface1: #45475a;
+    --catppuccin-mocha-surface0: #3b3d54;
+    --catppuccin-mocha-base: #1e1e2e;
+    --catppuccin-mocha-mantle: #181825;
+    --catppuccin-mocha-crust: #11111b;
 
     /* Override Orca variables for dark mode */
-    --orca-color-primary-5: var(--catppuccin-macchiato-mauve) !important;
-    --orca-color-primary-1: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 15%, var(--catppuccin-macchiato-base));
-    --orca-color-primary-2: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 40%, var(--catppuccin-macchiato-base));
-    --orca-color-primary-3: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 65%, var(--catppuccin-macchiato-base));
-    --orca-color-primary-4: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 85%, var(--catppuccin-macchiato-base));
-    --orca-color-primary-6: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 85%, var(--catppuccin-macchiato-text));
-    --orca-color-primary-7: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 65%, var(--catppuccin-macchiato-text));
-    --orca-color-primary-8: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 45%, var(--catppuccin-macchiato-text));
-    --orca-color-primary-9: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 30%, var(--catppuccin-macchiato-text));
+    --orca-color-primary-5: var(--catppuccin-mocha-mauve) !important;
+    --orca-color-primary-1: color-mix(in oklab, var(--catppuccin-mocha-mauve) 15%, var(--catppuccin-mocha-base));
+    --orca-color-primary-2: color-mix(in oklab, var(--catppuccin-mocha-mauve) 40%, var(--catppuccin-mocha-base));
+    --orca-color-primary-3: color-mix(in oklab, var(--catppuccin-mocha-mauve) 65%, var(--catppuccin-mocha-base));
+    --orca-color-primary-4: color-mix(in oklab, var(--catppuccin-mocha-mauve) 85%, var(--catppuccin-mocha-base));
+    --orca-color-primary-6: color-mix(in oklab, var(--catppuccin-mocha-mauve) 85%, var(--catppuccin-mocha-text));
+    --orca-color-primary-7: color-mix(in oklab, var(--catppuccin-mocha-mauve) 65%, var(--catppuccin-mocha-text));
+    --orca-color-primary-8: color-mix(in oklab, var(--catppuccin-mocha-mauve) 45%, var(--catppuccin-mocha-text));
+    --orca-color-primary-9: color-mix(in oklab, var(--catppuccin-mocha-mauve) 30%, var(--catppuccin-mocha-text));
 
-    --orca-color-gray-0: var(--catppuccin-macchiato-mantle);
-    --orca-color-gray-1: var(--catppuccin-macchiato-crust);
-    --orca-color-gray-2: var(--catppuccin-macchiato-surface0);
-    --orca-color-gray-3: var(--catppuccin-macchiato-surface1);
-    --orca-color-gray-4: var(--catppuccin-macchiato-surface2);
-    --orca-color-gray-5: var(--catppuccin-macchiato-overlay0);
-    --orca-color-gray-6: var(--catppuccin-macchiato-overlay1);
-    --orca-color-gray-7: var(--catppuccin-macchiato-overlay2);
-    --orca-color-gray-8: var(--catppuccin-macchiato-subtext0);
-    --orca-color-gray-9: var(--catppuccin-macchiato-subtext1);
+    --orca-color-gray-0: var(--catppuccin-mocha-mantle);
+    --orca-color-gray-1: var(--catppuccin-mocha-crust);
+    --orca-color-gray-2: var(--catppuccin-mocha-surface0);
+    --orca-color-gray-3: var(--catppuccin-mocha-surface1);
+    --orca-color-gray-4: var(--catppuccin-mocha-surface2);
+    --orca-color-gray-5: var(--catppuccin-mocha-overlay0);
+    --orca-color-gray-6: var(--catppuccin-mocha-overlay1);
+    --orca-color-gray-7: var(--catppuccin-mocha-overlay2);
+    --orca-color-gray-8: var(--catppuccin-mocha-subtext0);
+    --orca-color-gray-9: var(--catppuccin-mocha-subtext1);
 
-    --orca-color-success-5: var(--catppuccin-macchiato-green);
-    --orca-color-success-1: color-mix(in oklab, var(--catppuccin-macchiato-green) 40%, var(--catppuccin-macchiato-base));
-    --orca-color-success-2: color-mix(in oklab, var(--catppuccin-macchiato-green) 55%, var(--catppuccin-macchiato-base));
-    --orca-color-success-3: color-mix(in oklab, var(--catppuccin-macchiato-green) 70%, var(--catppuccin-macchiato-base));
-    --orca-color-success-4: color-mix(in oklab, var(--catppuccin-macchiato-green) 85%, var(--catppuccin-macchiato-base));
-    --orca-color-success-6: color-mix(in oklab, var(--catppuccin-macchiato-green) 85%, var(--catppuccin-macchiato-text));
-    --orca-color-success-7: color-mix(in oklab, var(--catppuccin-macchiato-green) 70%, var(--catppuccin-macchiato-text));
-    --orca-color-success-8: color-mix(in oklab, var(--catppuccin-macchiato-green) 55%, var(--catppuccin-macchiato-text));
-    --orca-color-success-9: color-mix(in oklab, var(--catppuccin-macchiato-green) 40%, var(--catppuccin-macchiato-text));
+    --orca-color-success-5: var(--catppuccin-mocha-green);
+    --orca-color-success-1: color-mix(in oklab, var(--catppuccin-mocha-green) 40%, var(--catppuccin-mocha-base));
+    --orca-color-success-2: color-mix(in oklab, var(--catppuccin-mocha-green) 55%, var(--catppuccin-mocha-base));
+    --orca-color-success-3: color-mix(in oklab, var(--catppuccin-mocha-green) 70%, var(--catppuccin-mocha-base));
+    --orca-color-success-4: color-mix(in oklab, var(--catppuccin-mocha-green) 85%, var(--catppuccin-mocha-base));
+    --orca-color-success-6: color-mix(in oklab, var(--catppuccin-mocha-green) 85%, var(--catppuccin-mocha-text));
+    --orca-color-success-7: color-mix(in oklab, var(--catppuccin-mocha-green) 70%, var(--catppuccin-mocha-text));
+    --orca-color-success-8: color-mix(in oklab, var(--catppuccin-mocha-green) 55%, var(--catppuccin-mocha-text));
+    --orca-color-success-9: color-mix(in oklab, var(--catppuccin-mocha-green) 40%, var(--catppuccin-mocha-text));
 
-    --orca-color-warning-5: var(--catppuccin-macchiato-yellow);
-    --orca-color-warning-1: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 40%, var(--catppuccin-macchiato-base));
-    --orca-color-warning-2: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 55%, var(--catppuccin-macchiato-base));
-    --orca-color-warning-3: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 70%, var(--catppuccin-macchiato-base));
-    --orca-color-warning-4: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 85%, var(--catppuccin-macchiato-base));
-    --orca-color-warning-6: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 85%, var(--catppuccin-macchiato-text));
-    --orca-color-warning-7: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 70%, var(--catppuccin-macchiato-text));
-    --orca-color-warning-8: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 55%, var(--catppuccin-macchiato-text));
-    --orca-color-warning-9: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 40%, var(--catppuccin-macchiato-text));
+    --orca-color-warning-5: var(--catppuccin-mocha-yellow);
+    --orca-color-warning-1: color-mix(in oklab, var(--catppuccin-mocha-yellow) 40%, var(--catppuccin-mocha-base));
+    --orca-color-warning-2: color-mix(in oklab, var(--catppuccin-mocha-yellow) 55%, var(--catppuccin-mocha-base));
+    --orca-color-warning-3: color-mix(in oklab, var(--catppuccin-mocha-yellow) 70%, var(--catppuccin-mocha-base));
+    --orca-color-warning-4: color-mix(in oklab, var(--catppuccin-mocha-yellow) 85%, var(--catppuccin-mocha-base));
+    --orca-color-warning-6: color-mix(in oklab, var(--catppuccin-mocha-yellow) 85%, var(--catppuccin-mocha-text));
+    --orca-color-warning-7: color-mix(in oklab, var(--catppuccin-mocha-yellow) 70%, var(--catppuccin-mocha-text));
+    --orca-color-warning-8: color-mix(in oklab, var(--catppuccin-mocha-yellow) 55%, var(--catppuccin-mocha-text));
+    --orca-color-warning-9: color-mix(in oklab, var(--catppuccin-mocha-yellow) 40%, var(--catppuccin-mocha-text));
 
-    --orca-color-dangerous-5: var(--catppuccin-macchiato-red);
-    --orca-color-dangerous-1: color-mix(in oklab, var(--catppuccin-macchiato-red) 40%, var(--catppuccin-macchiato-base));
-    --orca-color-dangerous-2: color-mix(in oklab, var(--catppuccin-macchiato-red) 55%, var(--catppuccin-macchiato-base));
-    --orca-color-dangerous-3: color-mix(in oklab, var(--catppuccin-macchiato-red) 70%, var(--catppuccin-macchiato-base));
-    --orca-color-dangerous-4: color-mix(in oklab, var(--catppuccin-macchiato-red) 85%, var(--catppuccin-macchiato-base));
-    --orca-color-dangerous-6: color-mix(in oklab, var(--catppuccin-macchiato-red) 85%, var(--catppuccin-macchiato-text));
-    --orca-color-dangerous-7: color-mix(in oklab, var(--catppuccin-macchiato-red) 70%, var(--catppuccin-macchiato-text));
-    --orca-color-dangerous-8: color-mix(in oklab, var(--catppuccin-macchiato-red) 55%, var(--catppuccin-macchiato-text));
-    --orca-color-dangerous-9: color-mix(in oklab, var(--catppuccin-macchiato-red) 40%, var(--catppuccin-macchiato-text));
+    --orca-color-dangerous-5: var(--catppuccin-mocha-red);
+    --orca-color-dangerous-1: color-mix(in oklab, var(--catppuccin-mocha-red) 40%, var(--catppuccin-mocha-base));
+    --orca-color-dangerous-2: color-mix(in oklab, var(--catppuccin-mocha-red) 55%, var(--catppuccin-mocha-base));
+    --orca-color-dangerous-3: color-mix(in oklab, var(--catppuccin-mocha-red) 70%, var(--catppuccin-mocha-base));
+    --orca-color-dangerous-4: color-mix(in oklab, var(--catppuccin-mocha-red) 85%, var(--catppuccin-mocha-base));
+    --orca-color-dangerous-6: color-mix(in oklab, var(--catppuccin-mocha-red) 85%, var(--catppuccin-mocha-text));
+    --orca-color-dangerous-7: color-mix(in oklab, var(--catppuccin-mocha-red) 70%, var(--catppuccin-mocha-text));
+    --orca-color-dangerous-8: color-mix(in oklab, var(--catppuccin-mocha-red) 55%, var(--catppuccin-mocha-text));
+    --orca-color-dangerous-9: color-mix(in oklab, var(--catppuccin-mocha-red) 40%, var(--catppuccin-mocha-text));
 
-    --orca-color-bg-1: var(--catppuccin-macchiato-base);
-    --orca-color-bg-2: var(--catppuccin-macchiato-mantle);
-    --orca-color-bg-3: var(--catppuccin-macchiato-crust);
-    --orca-color-bg-blue: color-mix(in oklab, var(--catppuccin-macchiato-blue) 60%, var(--catppuccin-macchiato-base));
-    --orca-color-bg-green: color-mix(in oklab, var(--catppuccin-macchiato-green) 62%, var(--catppuccin-macchiato-base));
-    --orca-color-bg-red: color-mix(in oklab, var(--catppuccin-macchiato-red) 60%, var(--catppuccin-macchiato-base));
-    --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-macchiato-yellow) 60%, var(--catppuccin-macchiato-base));
+    --orca-color-bg-1: var(--catppuccin-mocha-base);
+    --orca-color-bg-2: var(--catppuccin-mocha-mantle);
+    --orca-color-bg-3: var(--catppuccin-mocha-crust);
+    --orca-color-bg-blue: color-mix(in oklab, var(--catppuccin-mocha-blue) 60%, var(--catppuccin-mocha-base));
+    --orca-color-bg-green: color-mix(in oklab, var(--catppuccin-mocha-green) 62%, var(--catppuccin-mocha-base));
+    --orca-color-bg-red: color-mix(in oklab, var(--catppuccin-mocha-red) 60%, var(--catppuccin-mocha-base));
+    --orca-color-bg-yellow: color-mix(in oklab, var(--catppuccin-mocha-yellow) 60%, var(--catppuccin-mocha-base));
 
-    --orca-color-text-1: var(--catppuccin-macchiato-text);
-    --orca-color-text-2: var(--catppuccin-macchiato-overlay2);
-    --orca-color-text-blue: var(--catppuccin-macchiato-blue);
-    --orca-color-text-green: var(--catppuccin-macchiato-green);
-    --orca-color-text-red: var(--catppuccin-macchiato-red);
-    --orca-color-text-yellow: var(--catppuccin-macchiato-yellow);
+    --orca-color-text-1: var(--catppuccin-mocha-text);
+    --orca-color-text-2: var(--catppuccin-mocha-overlay2);
+    --orca-color-text-blue: var(--catppuccin-mocha-blue);
+    --orca-color-text-green: var(--catppuccin-mocha-green);
+    --orca-color-text-red: var(--catppuccin-mocha-red);
+    --orca-color-text-yellow: var(--catppuccin-mocha-yellow);
 
-    --orca-color-border: var(--catppuccin-macchiato-surface0);
-    --orca-color-separator: var(--catppuccin-macchiato-surface0);
-    --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 30%, var(--catppuccin-macchiato-base));
-    --orca-color-placeholder: var(--catppuccin-macchiato-overlay0);
+    --orca-color-border: var(--catppuccin-mocha-surface0);
+    --orca-color-separator: var(--catppuccin-mocha-surface0);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-mocha-mauve) 30%, var(--catppuccin-mocha-base));
+    --orca-color-placeholder: var(--catppuccin-mocha-overlay0);
     --orca-color-selection: oklch(from var(--orca-color-primary-5) l c h / 50%);
     --orca-color-result-highlight: var(--orca-color-bg-yellow);
-    --orca-color-tag: var(--catppuccin-macchiato-surface0);
+    --orca-color-tag: var(--catppuccin-mocha-surface0);
     --orca-color-tab: var(--orca-color-primary-6);
-    --orca-color-win-scrollbar: var(--catppuccin-macchiato-overlay0);
-    --orca-color-scope-line: var(--catppuccin-macchiato-surface1);
-    --orca-color-mirror: var(--catppuccin-macchiato-mantle);
+    --orca-color-win-scrollbar: var(--catppuccin-mocha-overlay0);
+    --orca-color-scope-line: var(--catppuccin-mocha-surface1);
+    --orca-color-mirror: var(--catppuccin-mocha-mantle);
 
     --orca-shadow-menu: rgb(from var(--orca-color-gray-6) r g b / 0.05) 0px 0px 0px 1px, rgb(from var(--orca-color-gray-6) r g b / 0.1) 0px 3px 6px, rgb(from var(--orca-color-gray-6) r g b / 0.2) 0px 9px 24px;
     --orca-shadow-toolbar-list: rgb(from var(--orca-color-gray-6) r g b / 0.05) 0px 2px 0px 1px, rgb(from var(--orca-color-gray-6) r g b / 0.1) 0px 3px 6px, rgb(from var(--orca-color-gray-6) r g b / 0.2) 0px 22px 24px;
@@ -249,18 +249,18 @@ body.kef-round-shell {
 
 @media (prefers-color-scheme: dark) {
   body.kef-round-shell {
-    background-color: var(--catppuccin-macchiato-crust);
+    background-color: var(--catppuccin-mocha-crust);
     background: radial-gradient(circle at 15% 25%,
         color-mix(in oklab,
-          var(--catppuccin-macchiato-overlay1) 36%,
+          var(--catppuccin-mocha-overlay1) 36%,
           transparent),
         transparent 58%),
       radial-gradient(circle at 85% 20%,
         color-mix(in oklab,
-          var(--catppuccin-macchiato-overlay2) 32%,
+          var(--catppuccin-mocha-overlay2) 32%,
           transparent),
         transparent 60%),
-      var(--catppuccin-macchiato-crust);
+      var(--catppuccin-mocha-crust);
   }
 }
 
@@ -383,93 +383,93 @@ body.kef-round-shell #headbar .orca-button {
 
 @media (prefers-color-scheme: dark) {
   #sidebar {
-    /* Dark mode sidebar - Catppuccin Macchiato inspired */
-    --orca-color-dangerous-5: var(--catppuccin-macchiato-red);
-    --orca-color-text-1: var(--catppuccin-macchiato-text);
-    --orca-color-bg-1: var(--catppuccin-macchiato-mantle);
-    --orca-color-bg-2: var(--catppuccin-macchiato-base);
-    --orca-color-border: var(--catppuccin-macchiato-surface1);
-    --orca-color-text-2: var(--catppuccin-macchiato-overlay2);
-    --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 25%, var(--catppuccin-macchiato-crust));
+    /* Dark mode sidebar - Catppuccin Mocha inspired */
+    --orca-color-dangerous-5: var(--catppuccin-mocha-red);
+    --orca-color-text-1: var(--catppuccin-mocha-text);
+    --orca-color-bg-1: var(--catppuccin-mocha-mantle);
+    --orca-color-bg-2: var(--catppuccin-mocha-base);
+    --orca-color-border: var(--catppuccin-mocha-surface1);
+    --orca-color-text-2: var(--catppuccin-mocha-overlay2);
+    --orca-color-menu-highlight: color-mix(in oklab, var(--catppuccin-mocha-mauve) 25%, var(--catppuccin-mocha-crust));
     --orca-border-general: 1px solid var(--orca-color-border);
-    --orca-shadow-menu: rgb(from var(--catppuccin-macchiato-base) r g b / 0.2) 0px 0px 0px 1px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.25) 0px 2px 4px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.35) 0px 8px 16px;
-    --orca-color-win-scrollbar: var(--catppuccin-macchiato-surface1);
-    --orca-color-selection: color-mix(in oklab, var(--catppuccin-macchiato-mauve) 25%, var(--catppuccin-macchiato-crust));
-    --orca-color-placeholder: var(--catppuccin-macchiato-overlay1);
+    --orca-shadow-menu: rgb(from var(--catppuccin-mocha-base) r g b / 0.2) 0px 0px 0px 1px, rgb(from var(--catppuccin-mocha-base) r g b / 0.25) 0px 2px 4px, rgb(from var(--catppuccin-mocha-base) r g b / 0.35) 0px 8px 16px;
+    --orca-color-win-scrollbar: var(--catppuccin-mocha-surface1);
+    --orca-color-selection: color-mix(in oklab, var(--catppuccin-mocha-mauve) 25%, var(--catppuccin-mocha-crust));
+    --orca-color-placeholder: var(--catppuccin-mocha-overlay1);
   }
 
   /* Sidebar tab options styling for dark mode */
   .orca-sidebar-tab-options {
-    background-color: var(--catppuccin-macchiato-surface0);
-    border: 1px solid var(--catppuccin-macchiato-surface0);
+    background-color: var(--catppuccin-mocha-surface0);
+    border: 1px solid var(--catppuccin-mocha-surface0);
   }
 
   .orca-sidebar-tab-options .orca-segmented-item {
-    color: var(--catppuccin-macchiato-overlay2);
+    color: var(--catppuccin-mocha-overlay2);
   }
 
   .orca-sidebar-tab-options .orca-segmented-item.orca-selected {
-    color: var(--catppuccin-macchiato-text);
+    color: var(--catppuccin-mocha-text);
   }
 
   .orca-sidebar-tab-options.orca-segmented:not(.orca-transitioning) .orca-segmented-item.orca-selected {
-    background-color: var(--catppuccin-macchiato-base);
+    background-color: var(--catppuccin-mocha-base);
     box-shadow: var(--orca-shadow-segmented);
   }
 
   .orca-sidebar-tab-options.orca-segmented .orca-transition {
-    background-color: var(--catppuccin-macchiato-base);
+    background-color: var(--catppuccin-mocha-base);
     box-shadow: var(--orca-shadow-segmented);
   }
 
   #sidebar .orca-sidebar-create-aliased-btn.orca-button {
-    background-color: var(--catppuccin-macchiato-surface0);
-    color: var(--catppuccin-macchiato-subtext1) !important;
+    background-color: var(--catppuccin-mocha-surface0);
+    color: var(--catppuccin-mocha-subtext1) !important;
   }
 
   #sidebar .orca-sidebar-create-aliased-btn.orca-button:hover {
-    background-color: var(--catppuccin-macchiato-surface1);
-    color: var(--catppuccin-macchiato-text) !important;
+    background-color: var(--catppuccin-mocha-surface1);
+    color: var(--catppuccin-mocha-text) !important;
   }
 
   /* Lists icon background color override for dark mode */
   #sidebar :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-    background-color: var(--catppuccin-macchiato-surface1);
-    color: var(--catppuccin-macchiato-overlay2);
+    background-color: var(--catppuccin-mocha-surface1);
+    color: var(--catppuccin-mocha-overlay2);
   }
 
   #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover {
-    background-color: var(--catppuccin-macchiato-surface1);
+    background-color: var(--catppuccin-mocha-surface1);
   }
 
   #sidebar :is(.orca-fav-item-item, .orca-tags-tag-item, .orca-aliased-block-item):hover :is(.orca-fav-item-icon, .orca-tags-tag-icon, .orca-tags-tag-icon-emoji, .orca-aliased-block-icon, .orca-aliased-block-icon-emoji) {
-    background-color: var(--catppuccin-macchiato-surface0);
-    color: var(--catppuccin-macchiato-overlay1);
+    background-color: var(--catppuccin-mocha-surface0);
+    color: var(--catppuccin-mocha-overlay1);
   }
 
   /* Menu/popup background override for Sidebar in dark mode */
   #sidebar .orca-menu {
-    background-color: var(--catppuccin-macchiato-mantle);
-    border: 1px solid var(--catppuccin-macchiato-surface0);
-    box-shadow: rgb(from var(--catppuccin-macchiato-base) r g b / 0.25) 0px 0px 0px 1px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.3) 0px 4px 8px, rgb(from var(--catppuccin-macchiato-base) r g b / 0.4) 0px 12px 24px;
+    background-color: var(--catppuccin-mocha-mantle);
+    border: 1px solid var(--catppuccin-mocha-surface0);
+    box-shadow: rgb(from var(--catppuccin-mocha-base) r g b / 0.25) 0px 0px 0px 1px, rgb(from var(--catppuccin-mocha-base) r g b / 0.3) 0px 4px 8px, rgb(from var(--catppuccin-mocha-base) r g b / 0.4) 0px 12px 24px;
   }
 
   /* Primary button text color override for Sidebar in dark mode */
   #sidebar .orca-button.solid {
-    color: var(--catppuccin-macchiato-base);
+    color: var(--catppuccin-mocha-base);
   }
 
   /* Calendar component styling for dark mode */
   .orca-calendar .day:not(.value):hover,
   .orca-calendar .month:not(.value):hover,
   .orca-calendar .year:not(.value):hover {
-    background-color: var(--catppuccin-macchiato-surface2);
-    color: var(--catppuccin-macchiato-text);
+    background-color: var(--catppuccin-mocha-surface2);
+    color: var(--catppuccin-mocha-text);
   }
 
   .orca-calendar .value {
-    background-color: var(--catppuccin-macchiato-mauve);
-    color: var(--catppuccin-macchiato-base);
+    background-color: var(--catppuccin-mocha-mauve);
+    color: var(--catppuccin-mocha-base);
   }
 }
 
@@ -508,21 +508,21 @@ body.kef-round-shell #headbar .orca-button {
 @media (prefers-color-scheme: dark) {
   @scope (.orca-settings > .sections) {
     :scope {
-      background-color: var(--catppuccin-macchiato-surface0);
+      background-color: var(--catppuccin-mocha-surface0);
     }
 
     .title {
-      background-color: var(--catppuccin-macchiato-surface0);
+      background-color: var(--catppuccin-mocha-surface0);
     }
 
     .item.selected,
     .item:hover {
-      background-color: var(--catppuccin-macchiato-surface1);
+      background-color: var(--catppuccin-mocha-surface1);
     }
 
     .plugin-item.selected,
     .plugin-item:hover {
-      background-color: var(--catppuccin-macchiato-surface1);
+      background-color: var(--catppuccin-mocha-surface1);
     }
   }
 
@@ -530,7 +530,7 @@ body.kef-round-shell #headbar .orca-button {
 
     .header-row,
     .header-row.row:hover {
-      background-color: var(--catppuccin-macchiato-surface0);
+      background-color: var(--catppuccin-mocha-surface0);
     }
   }
 
@@ -542,7 +542,7 @@ body.kef-round-shell #headbar .orca-button {
 
   .orca-settings-shortcuts-header,
   .orca-command-modal-command-header {
-    background-color: var(--catppuccin-macchiato-surface0);
+    background-color: var(--catppuccin-mocha-surface0);
   }
 }
 
@@ -571,22 +571,22 @@ body.kef-round-shell #headbar .orca-button {
 
   /* Dangerous button improvements for dark mode */
   .orca-button.dangerous {
-    background-color: var(--catppuccin-macchiato-red);
-    color: var(--catppuccin-macchiato-base);
+    background-color: var(--catppuccin-mocha-red);
+    color: var(--catppuccin-mocha-base);
   }
 
   .orca-button.dangerous:active {
-    background-color: var(--catppuccin-macchiato-maroon);
+    background-color: var(--catppuccin-mocha-maroon);
   }
 
   /* Soft button improvements for dark mode */
   .orca-button.soft {
-    background-color: var(--catppuccin-macchiato-surface1);
-    color: var(--catppuccin-macchiato-text);
+    background-color: var(--catppuccin-mocha-surface1);
+    color: var(--catppuccin-mocha-text);
   }
 
   .orca-button.soft:active {
-    background-color: var(--catppuccin-macchiato-surface2);
+    background-color: var(--catppuccin-mocha-surface2);
   }
 }
 
@@ -619,6 +619,13 @@ body.kef-round-shell #headbar .orca-button {
 
 @media (prefers-color-scheme: dark) {
   .orca-query-list-block {
-    --orca-color-mirror: var(--catppuccin-macchiato-crust);
+    --orca-color-mirror: var(--catppuccin-mocha-crust);
+  }
+}
+
+/* Inline code */
+@media (prefers-color-scheme: dark) {
+  .orca-inline.c {
+    border-bottom: 2px solid var(--orca-color-primary-3);
   }
 }

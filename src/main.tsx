@@ -37,8 +37,11 @@ export async function load(_name: string) {
   if (orca.state.themes["Aurora Borealis"] == null) {
     orca.themes.register(pluginName, "Aurora Borealis", "aurora-borealis.css")
   }
-  if (orca.state.themes["Catppuccin"] == null) {
-    orca.themes.register(pluginName, "Catppuccin", "catppuccin.css")
+  if (orca.state.themes["Catppuccin Macchiato"] == null) {
+    orca.themes.register(pluginName, "Catppuccin Macchiato", "catppuccin-macchiato.css")
+  }
+  if (orca.state.themes["Catppuccin Mocha"] == null) {
+    orca.themes.register(pluginName, "Catppuccin Mocha", "catppuccin-mocha.css")
   }
   if (orca.state.themes["Mono Mint"] == null) {
     orca.themes.register(pluginName, "Mono Mint", "mono-mint.css")
@@ -56,7 +59,8 @@ export async function load(_name: string) {
 
 export async function unload() {
   orca.themes.unregister("Aurora Borealis")
-  orca.themes.unregister("Catppuccin")
+  orca.themes.unregister("Catppuccin Macchiato")
+  orca.themes.unregister("Catppuccin Mocha")
   orca.themes.unregister("Mono Mint")
   orca.themes.unregister("Moonlit Sakura")
   orca.themes.unregister("Pastel Garden")
